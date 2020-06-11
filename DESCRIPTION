@@ -1,0 +1,25 @@
+Package: covid19dbcand
+Type: Package
+Title: DrugBank selected drugs for Covid-19 treatment related data in R format
+Version: 0.0.1
+Authors@R:
+    c(
+    person("Mohammed", "Ali", email = "moh_fcis@yahoo.com", 
+    role = c("aut", "cre")))
+Depends:
+    R (>= 3.1)
+Maintainer: Mohammed Ali <moh_fcis@yahoo.com>
+Description: The package provide 75 different datasets parsed from DrugBank 
+    <http://drugbank.ca/> database using dbparser package. 
+    It is a smaller version from dbdataset package. It contains only information
+    about Covid-19 pissible treatment.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/MohammedFCIS/covid19dbcand
+BugReports: https://github.com/MohammedFCIS/covid19dbcand/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0
