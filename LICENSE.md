@@ -1,0 +1,1 @@
+The data belongs to Drugbank and for any commercial use to it please contact Drugbank sales.
