@@ -7,11 +7,11 @@
 \format{
 a tibble with 1283 observations and 4 variables:
 \describe{
-  \item{ref-id}{Identifier for the article being referenced. 
+  \item{ref-id}{Identifier for the article being referenced.
   This is unique across all reference types (books, links, article).}
   \item{pubmed-id}{The PubMed identifier for the article.}
   \item{citation}{Article citation in a standard format.}
-  \item{parent_key}{transporter key}
+  \item{parent_id}{transporter id}
 }
 }
 \source{

@@ -13,7 +13,7 @@ a tibble with 36 observations and 6 variables:
   \item{known_action}{Whether the pharmacological action of the drug is due
    to this taget interaction.}
   \item{position}{related position}
-  \item{parent_key}{drug key}
+  \item{parent_id}{drugbank id}
 }
 }
 \source{
@@ -23,12 +23,12 @@ a tibble with 36 observations and 6 variables:
 Transporters_Drug
 }
 \description{
-Protein targets of drug action, enzymes that are inhibited/induced or 
-involved in metabolism, and carrier or transporter proteins involved in 
+Protein targets of drug action, enzymes that are inhibited/induced or
+involved in metabolism, and carrier or transporter proteins involved in
 movement of the drug across biological membranes.
 }
 \details{
-Each of targets, enzymes, carriers and transporters contain one or more 
+Each of targets, enzymes, carriers and transporters contain one or more
 child elements tibbles
 }
 \keyword{datasets}

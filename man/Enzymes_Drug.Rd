@@ -12,12 +12,12 @@ a tibble with 67 observations and 8 variables:
   \item{organism}{Organism that the protein comes from.}
   \item{known_action}{Whether the pharmacological action of the drug is due
    to this taget interaction.}
-  \item{inhibition_strength}{Whether the strength of enzyme inhibition is 
+  \item{inhibition_strength}{Whether the strength of enzyme inhibition is
    strong, moderate, or unknown. Only applies to enzymes.}
-  \item{nduction_strength}{Whether the strength of enzyme induction is strong or 
+  \item{nduction_strength}{Whether the strength of enzyme induction is strong or
    unknown. Only applies to enzymes.}
   \item{position}{related position}
-  \item{parent_key}{drug key}
+  \item{parent_id}{drugbank id}
 }
 }
 \source{
@@ -27,12 +27,12 @@ a tibble with 67 observations and 8 variables:
 Enzymes_Drug
 }
 \description{
-Protein targets of drug action, enzymes that are inhibited/induced or 
-involved in metabolism, and carrier or transporter proteins involved in 
+Protein targets of drug action, enzymes that are inhibited/induced or
+involved in metabolism, and carrier or transporter proteins involved in
 movement of the drug across biological membranes.
 }
 \details{
-Each of targets, enzymes, carriers and transporters contain one or more 
+Each of targets, enzymes, carriers and transporters contain one or more
 child elements tibbles
 }
 \keyword{datasets}

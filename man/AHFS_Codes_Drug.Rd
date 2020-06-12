@@ -8,7 +8,7 @@
 a tibble with 11 observations and 2 variables:
 \describe{
   \item{text}{ahfs code}
-  \item{parent_key}{drug key}
+  \item{parent_id}{drugbank id}
 }
 }
 \source{

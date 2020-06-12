@@ -8,7 +8,7 @@
 a tibble with 88 observations and 2 variables:
 \describe{
   \item{text}{describe related action}
-  \item{parent_key}{Target key}
+  \item{parent_id}{Target id}
 }
 }
 \source{

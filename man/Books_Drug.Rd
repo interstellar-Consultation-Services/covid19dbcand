@@ -7,11 +7,11 @@
 \format{
 a tibble with 1 observation and 4 variables:
 \describe{
-  \item{ref-id}{Identifier for the article being referenced. 
+  \item{ref-id}{Identifier for the article being referenced.
   This is unique across all reference types (books, links, article).}
   \item{isbn}{ISBN identifying the textbook.}
   \item{citation}{A Textbook citation in a standard format.}
-  \item{parent_key}{drug key}
+  \item{parent_id}{drugbank id}
 }
 }
 \source{

@@ -8,7 +8,7 @@
 a tibble with 15 observations and 2 variables:
 \describe{
   \item{text}{describe related action}
-  \item{parent_key}{carrier key}
+  \item{parent_id}{carrier id}
 }
 }
 \source{

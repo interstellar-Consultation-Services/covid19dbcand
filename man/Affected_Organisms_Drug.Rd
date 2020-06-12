@@ -8,7 +8,7 @@
 a tibble with 38 observations and 2 variables:
 \describe{
   \item{text}{affected organism description}
-  \item{parent_key}{drug key}
+  \item{parent_id}{drugbank id}
 }
 }
 \source{
@@ -18,7 +18,7 @@ a tibble with 38 observations and 2 variables:
 Affected_Organisms_Drug
 }
 \description{
-A list of organisms in which the drug may display activity; activity may 
+A list of organisms in which the drug may display activity; activity may
 depend on local susceptibility patterns and resistance.
 }
 \keyword{datasets}

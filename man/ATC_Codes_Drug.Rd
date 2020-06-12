@@ -10,7 +10,7 @@ a tibble with 33 observations and 10 variables:
   \item{atc_code}{drug related atc code}
   \item{level_n}{atc-code related level_n}
   \item{code_n}{atc-code and level_n related code_n}
-  \item{drugbank-id}{drug key}
+  \item{drugbank-id}{drugbank id}
 }
 }
 \source{
@@ -21,13 +21,13 @@ ATC_Codes_Drug
 }
 \description{
 The Anatomical Therapeutic Classification (ATC) code for the drug assigned by
-the World Health Organization Anatomical Chemical Classification System 
+the World Health Organization Anatomical Chemical Classification System
 \url{http://www.who.int/classifications/atcddd/en/}.
 }
 \details{
 Each drug may have one or more atc-code.
 
-Each atc-code has one or more level. 
+Each atc-code has one or more level.
 
 The atc-code and level elements each have a code which specifies the code
  assigned by the World Health Organization Anatomical Therapeutic Chemical
