@@ -17,5 +17,6 @@ The package is a smaller version from
 It is extracted using [dbparser](https://dainanahan.github.io/dbparser/) 
 
 For more information kindly check the
-reference/index (https://docs.ropensci.org/dbparser/reference/index.html)
+reference/index 
+(https://mohammedfcis.github.io/covid19dbcand/reference/index.html)
 }
