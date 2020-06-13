@@ -5,7 +5,7 @@
 \alias{ATC_Codes_Drug}
 \title{Drug related ATC Codes}
 \format{
-a tibble with 33 observations and 10 variables:
+a tibble with 4 variables:
 \describe{
   \item{atc_code}{drug related atc code}
   \item{level_n}{atc-code related level_n}
@@ -14,15 +14,15 @@ a tibble with 33 observations and 10 variables:
 }
 }
 \source{
-\url{https://docs.drugbankplus.com/xml/}
+\href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
 }
 \usage{
 ATC_Codes_Drug
 }
 \description{
 The Anatomical Therapeutic Classification (ATC) code for the drug assigned by
-the World Health Organization Anatomical Chemical Classification System
-\url{http://www.who.int/classifications/atcddd/en/}.
+the \href{http://www.who.int/classifications/atcddd/en/}{World Health
+Organization Anatomical Chemical Classification System}.
 }
 \details{
 Each drug may have one or more atc-code.
@@ -30,7 +30,7 @@ Each drug may have one or more atc-code.
 Each atc-code has one or more level.
 
 The atc-code and level elements each have a code which specifies the code
- assigned by the World Health Organization Anatomical Therapeutic Chemical
- Classification system \url{http://www.who.int/classifications/atcddd/en/}.
+assigned by \href{http://www.who.int/classifications/atcddd/en/}{World Health
+Organization Anatomical Chemical Classification System}.
 }
 \keyword{datasets}

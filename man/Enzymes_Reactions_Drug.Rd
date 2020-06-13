@@ -6,7 +6,7 @@
 \title{Drug Reactions Enzymes
 Enzymes involved in metabolizing this drug.}
 \format{
-a tibble with 28 observations and 3 variables:
+a tibble with 3 variables:
 \describe{
   \item{drugbank-id}{}
   \item{name}{}
@@ -14,7 +14,7 @@ a tibble with 28 observations and 3 variables:
 }
 }
 \source{
-\url{https://docs.drugbankplus.com/xml/}
+\href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
 }
 \usage{
 Enzymes_Reactions_Drug

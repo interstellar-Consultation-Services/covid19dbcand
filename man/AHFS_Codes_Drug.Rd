@@ -5,14 +5,14 @@
 \alias{AHFS_Codes_Drug}
 \title{The American Hospital Formulary Service (AHFS) identifier for Drugs}
 \format{
-a tibble with 11 observations and 2 variables:
+a tibble with 2 variables:
 \describe{
   \item{text}{ahfs code}
   \item{parent_id}{drugbank id}
 }
 }
 \source{
-\url{https://docs.drugbankplus.com/xml/}
+\href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
 }
 \usage{
 AHFS_Codes_Drug

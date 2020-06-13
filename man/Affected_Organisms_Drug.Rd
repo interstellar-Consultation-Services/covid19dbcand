@@ -5,14 +5,14 @@
 \alias{Affected_Organisms_Drug}
 \title{Drug related Affected Organisms}
 \format{
-a tibble with 38 observations and 2 variables:
+a tibble with 2 variables:
 \describe{
   \item{text}{affected organism description}
   \item{parent_id}{drugbank id}
 }
 }
 \source{
-\url{https://docs.drugbankplus.com/xml/}
+\href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
 }
 \usage{
 Affected_Organisms_Drug

@@ -5,7 +5,7 @@
 \alias{Drugs}
 \title{Drugs}
 \format{
-a tibble with 25 observations and 29 variables:
+a tibble with 29 variables:
 \describe{
   \item{primary_id}{drugbank id}
   \item{other_ids}{Other identifiers that may be associated with the drug.}
@@ -42,36 +42,36 @@ a tibble with 25 observations and 29 variables:
   desired (enzyme or protein targets for example) and undesired (also known
   as “side effects”). This is in contrast to pharmacokinetics, which
   describes how the body modifies the drug being used.}
-  \item{mechanism_of_action}{A component of pharmacodynamics that describes 
-  the biochemical interaction through which a drug produces its intended 
-  effect. May include the exact molecular protein or enzyme targets and/or 
+  \item{mechanism_of_action}{A component of pharmacodynamics that describes
+  the biochemical interaction through which a drug produces its intended
+  effect. May include the exact molecular protein or enzyme targets and/or
   a description of the physiological effects produced.}
-  \item{metabolism}{A description of the chemical degradation of the drug 
+  \item{metabolism}{A description of the chemical degradation of the drug
   molecule within the body; most commonly by enzymes from the Cytochrome P450
   (CYP) system in the liver.}
-  \item{absorption}{A description of the movement of the drug from the site 
-  of administration into the bloodstream or target tissue. 
-  Common pharmacokinetic metrics used to evaluate absorption include Area 
-  Under the Curve (AUC), bioavailability (F), maximum concentration (Cmax), 
+  \item{absorption}{A description of the movement of the drug from the site
+  of administration into the bloodstream or target tissue.
+  Common pharmacokinetic metrics used to evaluate absorption include Area
+  Under the Curve (AUC), bioavailability (F), maximum concentration (Cmax),
   and time to maximum concentration (Tmax)}
   \item{half_life}{The period of time it takes for the amount of drug in the
    body to be reduced by one half. Provides a description of how quickly the
    drug is being eliminated and how much is available in the bloodstream.}
   \item{protein_binding}{A description of the drug’s affinity for plama
-   proteins and the proportion of the drug that is bound to them when in 
+   proteins and the proportion of the drug that is bound to them when in
    circulation within the body.}
-  \item{route_of_elimination}{A description of the pathway that is used to 
+  \item{route_of_elimination}{A description of the pathway that is used to
   excrete the drug from the body. Common pharmacokinetic parameters used to
-  evaluate excretion include elemination half life, renal clearance, and 
+  evaluate excretion include elemination half life, renal clearance, and
   tracking of radiolabelled compounds through the renal and GI system.}
-  \item{volume_of_distribution}{The Vd of a drug represents the degree to 
+  \item{volume_of_distribution}{The Vd of a drug represents the degree to
   which it is distributed into body tissue compared to the plasma.}
-  \item{clearance}{A pharmacokinetic measurement of the rate of removal of 
+  \item{clearance}{A pharmacokinetic measurement of the rate of removal of
   the drug from plasma, expressed as mL/min; reflects the rate of elimination
    of the drug.}
   \item{international_brands}{The proprietary names used by the manufacturers
    for commercially available forms of the drug, focusing on brand names for
-   products that are available in countries other than Canada and 
+   products that are available in countries other than Canada and
    the Unites States.}
   \item{fda_label}{Contains a URL for accessing the uploaded United States
   Food and Drug Administration (FDA) Monograph for this drug.}
@@ -79,14 +79,14 @@ a tibble with 25 observations and 29 variables:
    (MSDS)
    for this drug.}
   \item{toxicity}{Any adverse reaction, or side effect, that may or may not
-   occur with use of the drug. May be attributed to a number of effects 
-   including: an enhanced therapeutic effect, rare anaphylactic reactions, 
-   interactions with other medications, or unanticipated binding of the 
+   occur with use of the drug. May be attributed to a number of effects
+   including: an enhanced therapeutic effect, rare anaphylactic reactions,
+   interactions with other medications, or unanticipated binding of the
    molecule at different sites within the body.}
 }
 }
 \source{
-\url{https://docs.drugbankplus.com/xml/}
+\href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
 }
 \usage{
 Drugs

@@ -7,7 +7,7 @@
 Pathway Drugs
 Each drug may have one or more pathway and vise versa}
 \format{
-a tibble with 33 observations and 3 variables:
+a tibble with 3 variables:
 \describe{
   \item{drugbank-id}{}
   \item{name}{drug name}
@@ -15,7 +15,7 @@ a tibble with 33 observations and 3 variables:
 }
 }
 \source{
-\url{https://docs.drugbankplus.com/xml/}
+\href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
 }
 \usage{
 Drugs_Pathway_Drug

@@ -6,7 +6,7 @@
 \title{Drug Dosages
 A list of the commercially available dosages of the drug.}
 \format{
-a tibble with 225 observations and 4 variables:
+a tibble with 4 variables:
 \describe{
   \item{form}{The pharmaceutical formulation by which the drug is introduced
    into the body.}
@@ -17,7 +17,7 @@ a tibble with 225 observations and 4 variables:
 }
 }
 \source{
-\url{https://docs.drugbankplus.com/xml/}
+\href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
 }
 \usage{
 Dosages_Drug

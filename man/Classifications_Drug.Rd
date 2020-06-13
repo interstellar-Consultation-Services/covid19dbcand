@@ -5,7 +5,7 @@
 \alias{Classifications_Drug}
 \title{Drug Classification}
 \format{
-a tibble with 17 observations and 9 variables:
+a tibble with 9 variables:
 \describe{
   \item{description}{}
   \item{direct_parent}{}
@@ -19,13 +19,13 @@ a tibble with 17 observations and 9 variables:
 }
 }
 \source{
-\url{https://docs.drugbankplus.com/xml/}
+\href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
 }
 \usage{
 Classifications_Drug
 }
 \description{
 A description of the hierarchical chemical classification of the drug;
-imported from ClassyFire \url{http://classyfire.wishartlab.com/}.
+imported from \href{http://classyfire.wishartlab.com/}{ClassyFire}.
 }
 \keyword{datasets}
