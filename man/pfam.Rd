@@ -6,6 +6,7 @@
 \alias{PFAMS_Polypeptide_Carrier_Drug}
 \alias{PFAMS_Polypeptides_Enzyme_Drug}
 \alias{PFAMS_Polypeptide_Target_Drug}
+\alias{PFAMS_Polypeptid_Transporter_Drug}
 \title{PFAMs}
 \format{
 a tibble with 3 variables:
@@ -21,7 +22,7 @@ An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, 
 
 An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 81 rows and 3 columns.
 
-An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 81 rows and 3 columns.
+An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 25 rows and 3 columns.
 }
 \source{
 \href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
@@ -33,7 +34,7 @@ PFAMS_Polypeptides_Enzyme_Drug
 
 PFAMS_Polypeptide_Target_Drug
 
-PFAMS_Polypeptide_Target_Drug
+PFAMS_Polypeptid_Transporter_Drug
 }
 \description{
 The \href{http://pfam.xfam.org/}{protein family (pfam)} identifier

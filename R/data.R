@@ -771,7 +771,7 @@ NULL
 "PFAMS_Polypeptide_Target_Drug"
 
 #' @rdname pfam
-"PFAMS_Polypeptide_Target_Drug"
+"PFAMS_Polypeptid_Transporter_Drug"
 
 #' Polypeptide
 #'
@@ -924,8 +924,7 @@ NULL
 #' Drug Calculated Properties
 #'
 #' Drug properties that have been predicted by 
-#' \href{https://www.chemaxon.com/products/calculator-plugins/
-#' property-predictors/#logp_logd}{ChemAxon} or 
+#' ChemAxon or 
 #' \href{http://www.vcclab.org/lab/alogps/}{ALOGPS} based on the inputed 
 #' chemical structure. Associated links below will redirect to descriptions of 
 #' the specific term.
@@ -939,7 +938,7 @@ NULL
 #' solubility of the molecule in 1-octanol compared to water; predicted by 
 #' \href{http://www.vcclab.org/lab/alogps/}{ALOGPS} \cr
 #' logS \tab The predicted solubility (LogS) of the molecule; 
-#' predicted by {http://www.vcclab.org/lab/alogps/}{ALOGPS}. \cr
+#' predicted by \href{http://www.vcclab.org/lab/alogps/}{ALOGPS}. \cr
 #' IUPAC Name \tab The predicted International Union of Pure and Applied 
 #' Chemistry (IUPAC) nomenclature for the structure; predicted by ChemAxon \cr
 #' Traditional IUPAC Name	\tab The non-systematic (or common) name for the 
@@ -1087,3 +1086,81 @@ NULL
 
 #' @rdname poly_syn
 "Synonyms_Polypeptide_Transporter_Drug"
+
+#' Drug Products
+#'
+#' A list of commercially available products in Canada and the United States 
+#' that contain the drug.
+#' 
+#' Each drug may have one or more product. 
+#' 
+#' @format a tibble with 19 variables:
+#' \describe{
+#'   \item{name}{The proprietary name(s) provided by the manufacturer for any 
+#'   commercially available products containing this drug.}
+#'   \item{labeller}{The corporation responsible for labelling this product.}
+#'   \item{ndc-id}{The National Drug Code (NDC) identifier of
+#'    the drug.}
+#'   \item{ndc-product-code	}{The National Drug Code (NDC) product code from the
+#'    FDA National Drug Code directory.}
+#'   \item{dpd-id	}{\href{http://webprod5.hc-sc.gc.ca/dpd-bdpp/index-eng.jsp}{
+#'   Drug Product Database (DPD)} identification number (a.k.a. DIN) from the
+#'    Canadian Drug Product Database. Only present for drugs that are marketed 
+#'    in Canada.}
+#'   \item{ema-product-code}{EMA product code from the European Medicines Agency
+#'    Database. Only present for products that are authorised by central 
+#'    procedure for marketing in the European Union.}
+#'   \item{ema-ma-number}{EMA marketing authorisation number from the European 
+#'   Medicines Agency Database. Only present for products that are authorised by
+#'    central procedure for marketing in the European Union.}
+#'   \item{started-marketing-on}{The starting date for market approval.}
+#'   \item{ended-marketing-on}{The ending date for market approval.}
+#'   \item{dosage-form}{The pharmaceutical formulation by which the drug is 
+#'   introduced into the body.}
+#'   \item{strength}{The amount of active drug ingredient provided in the 
+#'   dosage.}
+#'   \item{route}{The path by which the drug or product is taken into the body.}
+#'   \item{fda-application-number}{The New Drug Application [NDA] number 
+#'   assigned to this drug by the FDA.}
+#'   \item{over-the-counter}{A list of Over The Counter (OTC) forms of the drug}
+#'   \item{generic}{Whether this product is a generic drug}
+#'   \item{approved}{Indicates whether this drug has been approved by the 
+#'   regulating government.}
+#'   \item{country}{The country where this commercially available drug has been 
+#'   approved.}
+#'   \item{source}{Source of this product information. For example, a value of 
+#'   DPD indicates this information was retrieved from the Canadian Drug Product Database.}
+#'   \item{parent_key}{drugbank id}
+#' }
+#'
+#' @source \href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
+"Products_Drug"
+
+#' Drug SNP Effects
+#'
+#' A list of single nucleotide polymorphisms (SNPs) relevent to drug activity or
+#'  metabolism, and the effects these may have on pharmacological activity. 
+#'  SNP effects in the patient may require close monitoring, an increase or 
+#'  decrease in dose, or a change in therapy.
+#' 
+#' Each drug may have one or more SNP Effect. 
+#' 
+#' @format a tibble with 9 variables:
+#' \describe{
+#'   \item{protein-name}{Proteins involved in this SNP.}
+#'   \item{gene-symbol}{Genes involved in this SNP.}
+#'   \item{uniprot-id	}{\href{http://www.uniprot.org/}{Universal Protein 
+#'   Resource (UniProt)} identifiers for 
+#'   proteins involved in this pathway.}
+#'   \item{rs-id}{The \href{https://www.ncbi.nlm.nih.gov/projects/SNP/}{SNP
+#'    Database} identifier for this single nucleotide polymorphism.}
+#'   \item{allele}{The alleles associated with the identified SNP.}
+#'   \item{defining-change}{A written description of the SNP effects.}
+#'   \item{pubmed-id}{Reference to \href{http://www.ncbi.nlm.nih.gov/pubmed}{
+#'   PubMed} article}
+#'   \item{description}{A written description of the SNP effects}
+#'   \item{parent_key}{drugbank id}
+#' }
+#'
+#' @source \href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
+"SNP_Effects_Drug"

@@ -23,8 +23,7 @@ Calculated_Properties_Drug
 }
 \description{
 Drug properties that have been predicted by 
-\href{https://www.chemaxon.com/products/calculator-plugins/
-property-predictors/#logp_logd}{ChemAxon} or 
+ChemAxon or 
 \href{http://www.vcclab.org/lab/alogps/}{ALOGPS} based on the inputed 
 chemical structure. Associated links below will redirect to descriptions of 
 the specific term.
@@ -39,7 +38,7 @@ logP \tab The predicted partition coefficient (LogP) based on the ratio of
 solubility of the molecule in 1-octanol compared to water; predicted by 
 \href{http://www.vcclab.org/lab/alogps/}{ALOGPS} \cr
 logS \tab The predicted solubility (LogS) of the molecule; 
-predicted by {http://www.vcclab.org/lab/alogps/}{ALOGPS}. \cr
+predicted by \href{http://www.vcclab.org/lab/alogps/}{ALOGPS}. \cr
 IUPAC Name \tab The predicted International Union of Pure and Applied 
 Chemistry (IUPAC) nomenclature for the structure; predicted by ChemAxon \cr
 Traditional IUPAC Name	\tab The non-systematic (or common) name for the 
