@@ -63,7 +63,7 @@ a tibble with 29 variables:
   \item{route_of_elimination}{A description of the pathway that is used to
   excrete the drug from the body. Common pharmacokinetic parameters used to
   evaluate excretion include elemination half life, renal clearance, and
-  tracking of radiolabelled compounds through the renal and GI system.}
+  tracking of radiolabeled compounds through the renal and GI system.}
   \item{volume_of_distribution}{The Vd of a drug represents the degree to
   which it is distributed into body tissue compared to the plasma.}
   \item{clearance}{A pharmacokinetic measurement of the rate of removal of

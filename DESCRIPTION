@@ -1,6 +1,6 @@
 Package: covid19dbcand
 Type: Package
-Title: DrugBank selected drugs for Covid-19 treatment related data in R format
+Title: Selected 'Drugbank' Drugs for 'COVID-19' Treatment Related Data in R Format
 Version: 0.1.0
 Authors@R:
     c(
@@ -9,10 +9,10 @@ Authors@R:
 Depends:
     R (>= 3.1)
 Maintainer: Mohammed Ali <moh_fcis@yahoo.com>
-Description: The package provide 75 different datasets parsed from DrugBank 
-    <http://drugbank.ca/covid-19> database using dbparser package. 
-    It is a smaller version from dbdataset package. It contains only information
-    about Covid-19 pissible treatment.
+Description: Provides 75 different 'datasets' parsed from 'Drugbank' 
+    <http://drugbank.ca/covid-19> database using 'dbparser' package. 
+    It is a smaller version from 'dbdataset' package. It contains only information
+    about 'COVID-19' possible treatment.
 License: CC0
 Encoding: UTF-8
 LazyData: true

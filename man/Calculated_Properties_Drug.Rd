@@ -24,7 +24,7 @@ Calculated_Properties_Drug
 \description{
 Drug properties that have been predicted by 
 ChemAxon or 
-\href{http://www.vcclab.org/lab/alogps/}{ALOGPS} based on the inputed 
+\href{http://www.vcclab.org/lab/alogps/}{ALOGPS} based on the imputed 
 chemical structure. Associated links below will redirect to descriptions of 
 the specific term.
 }

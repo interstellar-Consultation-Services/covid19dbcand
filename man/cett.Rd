@@ -15,7 +15,7 @@ a tibble with 6 variables:
   \item{name}{related name}
   \item{organism}{Organism that the protein comes from.}
   \item{known_action}{Whether the pharmacological action of the drug is due
-   to this taget interaction.}
+   to this target interaction.}
   \item{position}{related position}
   \item{parent_id}{drugbank id}
 }

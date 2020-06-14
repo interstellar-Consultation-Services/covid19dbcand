@@ -14,10 +14,9 @@ a tibble with 19 variables:
    the drug.}
   \item{ndc-product-code	}{The National Drug Code (NDC) product code from the
    FDA National Drug Code directory.}
-  \item{dpd-id	}{\href{http://webprod5.hc-sc.gc.ca/dpd-bdpp/index-eng.jsp}{
-  Drug Product Database (DPD)} identification number (a.k.a. DIN) from the
-   Canadian Drug Product Database. Only present for drugs that are marketed 
-   in Canada.}
+  \item{dpd-id	}{Drug Product Database (DPD) identification number 
+  (a.k.a. DIN) from the Canadian Drug Product Database. Only present for 
+  drugs that are marketed in Canada.}
   \item{ema-product-code}{EMA product code from the European Medicines Agency
    Database. Only present for products that are authorised by central 
    procedure for marketing in the European Union.}

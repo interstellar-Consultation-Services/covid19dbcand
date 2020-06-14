@@ -144,7 +144,7 @@ NULL
 #'   \item{name}{related name}
 #'   \item{organism}{Organism that the protein comes from.}
 #'   \item{known_action}{Whether the pharmacological action of the drug is due
-#'    to this taget interaction.}
+#'    to this target interaction.}
 #'   \item{position}{related position}
 #'   \item{parent_id}{drugbank id}
 #' }
@@ -274,7 +274,7 @@ NULL
 #'   \item{route_of_elimination}{A description of the pathway that is used to
 #'   excrete the drug from the body. Common pharmacokinetic parameters used to
 #'   evaluate excretion include elemination half life, renal clearance, and
-#'   tracking of radiolabelled compounds through the renal and GI system.}
+#'   tracking of radiolabeled compounds through the renal and GI system.}
 #'   \item{volume_of_distribution}{The Vd of a drug represents the degree to
 #'   which it is distributed into body tissue compared to the plasma.}
 #'   \item{clearance}{A pharmacokinetic measurement of the rate of removal of
@@ -364,7 +364,7 @@ NULL
 #'    absorb or dissolve water \cr
 #'   Isoelectric Point \tab The pH value at which the net electric charge of
 #'   a molecule is zero \cr
-#'   caco2 Permeability \tab A continuous line of heterogenous human epithelial
+#'   caco2 Permeability \tab A continuous line of heterogeneous human epithelial
 #'    colorectal adenocarcinoma cells, CAC02 cells are employed as a model of
 #'    human intestinal absorption of various drugs and compounds. CAC02 cell
 #'    permeability is ultimately an assay to measure drug absorption\cr
@@ -785,9 +785,9 @@ NULL
 #'   \item{id}{\href{http://www.uniprot.org/}{Universal Protein Resource 
 #'   (UniProt) identifier}}
 #'   \item{source}{Specifies whether the identified polypeptide ID is 
-#'   associated with any of the following UniProt knowledgebases: 
+#'   associated with any of the following UniProt knowledge bases: 
 #'   Swiss-Prot, which is manually annotated and reviewed, or TrEMBL, 
-#'   which is automatically annotated and not reveiwed.}
+#'   which is automatically annotated and not reviewed.}
 #'   \item{name}{}
 #'   \item{general_function}{General summary of the physiological function of 
 #'   the polypeptide}
@@ -884,14 +884,14 @@ NULL
 #' 
 #' @format a tibble with 8 variables:
 #' \describe{
-#'   \item{drugbank-id}{DrugBank identfiers of the available salt form(s)}
+#'   \item{drugbank-id}{DrugBank identifiers of the available salt form(s)}
 #'   \item{name}{Name of the available salt form(s)}
 #'   \item{unii}{Unique Ingredient Identifier (UNII) of the available 
 #'   salt form(s).}
 #'   \item{cas-number}{Chemical Abstracts Service (CAS) registry number assigned
 #'    to the salt form(s) of the drug.}
 #'   \item{inchikey}{\href{http://www.inchi-trust.org/}{IUPAC International 
-#'   Chemical Identifier (InChi)} key identfier for the available salt form(s)}
+#'   Chemical Identifier (InChi)} key identifier for the available salt form(s)}
 #'   \item{average-mass}{Average molecular mass: the weighted average of the
 #'    isotopic masses of the salt.}
 #'   \item{monoisotopic-mass}{The mass of the most abundant isotope of the salt}
@@ -925,7 +925,7 @@ NULL
 #'
 #' Drug properties that have been predicted by 
 #' ChemAxon or 
-#' \href{http://www.vcclab.org/lab/alogps/}{ALOGPS} based on the inputed 
+#' \href{http://www.vcclab.org/lab/alogps/}{ALOGPS} based on the imputed 
 #' chemical structure. Associated links below will redirect to descriptions of 
 #' the specific term.
 #' 
@@ -1103,10 +1103,9 @@ NULL
 #'    the drug.}
 #'   \item{ndc-product-code	}{The National Drug Code (NDC) product code from the
 #'    FDA National Drug Code directory.}
-#'   \item{dpd-id	}{\href{http://webprod5.hc-sc.gc.ca/dpd-bdpp/index-eng.jsp}{
-#'   Drug Product Database (DPD)} identification number (a.k.a. DIN) from the
-#'    Canadian Drug Product Database. Only present for drugs that are marketed 
-#'    in Canada.}
+#'   \item{dpd-id	}{Drug Product Database (DPD) identification number 
+#'   (a.k.a. DIN) from the Canadian Drug Product Database. Only present for 
+#'   drugs that are marketed in Canada.}
 #'   \item{ema-product-code}{EMA product code from the European Medicines Agency
 #'    Database. Only present for products that are authorised by central 
 #'    procedure for marketing in the European Union.}
@@ -1138,7 +1137,7 @@ NULL
 
 #' Drug SNP Effects
 #'
-#' A list of single nucleotide polymorphisms (SNPs) relevent to drug activity or
+#' A list of single nucleotide polymorphisms (SNPs) relevant to drug activity or
 #'  metabolism, and the effects these may have on pharmacological activity. 
 #'  SNP effects in the patient may require close monitoring, an increase or 
 #'  decrease in dose, or a change in therapy.

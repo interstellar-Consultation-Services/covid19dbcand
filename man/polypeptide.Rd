@@ -14,9 +14,9 @@ a tibble with 20 variables:
   \item{id}{\href{http://www.uniprot.org/}{Universal Protein Resource 
   (UniProt) identifier}}
   \item{source}{Specifies whether the identified polypeptide ID is 
-  associated with any of the following UniProt knowledgebases: 
+  associated with any of the following UniProt knowledge bases: 
   Swiss-Prot, which is manually annotated and reviewed, or TrEMBL, 
-  which is automatically annotated and not reveiwed.}
+  which is automatically annotated and not reviewed.}
   \item{name}{}
   \item{general_function}{General summary of the physiological function of 
   the polypeptide}

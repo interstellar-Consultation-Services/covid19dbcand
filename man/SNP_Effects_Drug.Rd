@@ -29,7 +29,7 @@ a tibble with 9 variables:
 SNP_Effects_Drug
 }
 \description{
-A list of single nucleotide polymorphisms (SNPs) relevent to drug activity or
+A list of single nucleotide polymorphisms (SNPs) relevant to drug activity or
  metabolism, and the effects these may have on pharmacological activity. 
  SNP effects in the patient may require close monitoring, an increase or 
  decrease in dose, or a change in therapy.

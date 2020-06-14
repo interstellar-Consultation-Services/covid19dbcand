@@ -39,7 +39,7 @@ The following experimental properties are provided:
    absorb or dissolve water \cr
   Isoelectric Point \tab The pH value at which the net electric charge of
   a molecule is zero \cr
-  caco2 Permeability \tab A continuous line of heterogenous human epithelial
+  caco2 Permeability \tab A continuous line of heterogeneous human epithelial
    colorectal adenocarcinoma cells, CAC02 cells are employed as a model of
    human intestinal absorption of various drugs and compounds. CAC02 cell
    permeability is ultimately an assay to measure drug absorption\cr
