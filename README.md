@@ -9,7 +9,7 @@ different data frames that constitute the dataset parsed from
 [DrugBank](https://www.drugbank.ca).
 
 The dataset was extracted from the DrugBank XML database via
-[dbparser](https://dainanahan.github.io/dbparser/) R package.
+[dbparser](https://docs.ropensci.org/dbparser) R package.
 
 This dataset dedicated to covid-19 potential drugs in
 [Drugbank](https://www.drugbank.ca/covid-19#drugs).
