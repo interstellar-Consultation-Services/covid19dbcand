@@ -84,6 +84,39 @@ NULL
 #' @rdname articles
 "Articles_Transporter_Drug"
 
+#' Drugs/ Carriers/ Enzymes/ Targets/ Transporters Attachments
+#'
+#' Return a list of attachment that were used as references for drugs or CETT
+#'
+#' @return  a tibble with 4 variables:
+#' \describe{
+#'   \item{ref-id}{Identifier for the article being referenced.
+#'   This is unique across all reference types (books, links, article,
+#'   attachments).}
+#'   \item{title}{The title of the attachment.}
+#'   \item{url}{The url to download the attachment from.}
+#'   \item{\emph{parent_id}}{drug/carrier/target/enzyme/transporter id}
+#' }
+#'
+#' @source \href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
+#' @name attachments
+NULL
+
+#' @rdname attachments
+"Attachments"
+
+#' @rdname attachments
+"Attachments_Enzymes"
+
+#' @rdname attachments
+"Attachments_Carriers"
+
+#' @rdname attachments
+"Attachments_Targets"
+
+#' @rdname attachments
+"Attachments_Transporters"
+
 #' Drug related ATC Codes
 #'
 #' The Anatomical Therapeutic Classification (ATC) code for the drug assigned by
@@ -216,88 +249,90 @@ NULL
 #' Substance other than water and food that when administered by any route can
 #' cause a physiological or biological change in the body.
 #'
-#' @format a tibble with 29 variables:
+#' @return  a tibble with 15 variables:
 #' \describe{
-#'   \item{primary_id}{drugbank id}
-#'   \item{other_ids}{Other identifiers that may be associated with the drug.}
-#'   \item{type}{Either small molecule, or biotech.
-#'    Biotech is used for any drug that is derived from living systems or
-#'    organisms, usually composed of high molecular weight mixtures of protein,
-#'    while small molecule describes a low molecular weight organic compound.}
-#'   \item{created}{Date that this drug was first added to DrugBank.}
-#'   \item{updated}{Denotes when this drug was last updated in DrugBank}
+#'   \item{primary_key}{Drugbank id}
+#'   \item{other_keys}{Other identifiers that may be associated with the drug}
+#'   \item{type}{	Either small molecule, or biotech. Biotech is used for any
+#'   drug that is derived from living systems or organisms, usually composed of
+#'    high molecular weight mixtures of protein, while small molecule describes
+#'     a low molecular weight organic compound.}
 #'   \item{name}{}
+#'   \item{created}{Date that this drug was first added to DrugBank.}
+#'   \item{updated}{Denotes when this drug was last updated in DrugBank.}
 #'   \item{description}{Descriptions of drug chemical properties,
-#'    history and regulatory status}
-#'   \item{simple_description}{The simple description uses non-technical
-#'   language and summarizes the most common uses for the drug}
-#'   \item{clinical_description}{The clinical description includes the id
-#'   details about indications and mechanism to quickly summarize the drug for
-#'   a professional user.}
+#'    history and regulatory status.}
 #'   \item{cas_number}{The Chemical Abstracts Service (CAS) registry number
-#'   assigned to the drug.}
-#'   \item{unii}{Unique Ingredient Identifier (UNII) of this drug.}
+#'    assigned to the drug.}
+#'   \item{\emph{unii}}{Unique Ingredient Identifier (UNII) of this drug.}
 #'   \item{average_mass}{The weighted average of the isotopic masses of the
-#'   drug.}
+#'   drug}
+#'   \item{state}{One of solid, liquid, or gas}
 #'   \item{monoisotopic_mass}{The mass of the most abundant isotope of the drug}
-#'   \item{state}{One of solid, liquid, or gas.}
 #'   \item{synthesis_reference}{Citation for synthesis of the drug molecule.}
-#'   \item{indication}{The approved conditions, diseases, or states for which
-#'   a drug can safely and effectively be used. An indication is considered to
-#'   be FDA-approved when it has any of the following designations: NDA, ANDA,
-#'   BLA, or OTC. May also include indications in other countries, such as
-#'   Canada (through Health Canada) or in Europe
-#'   (through the European Medicines Agency).}
-#'   \item{pharmacodynamics}{A description of how the drug modifies or affects
-#'   the organism it is being used in. May include effects in the body that are
-#'   desired (enzyme or protein targets for example) and undesired (also known
-#'   as “side effects”). This is in contrast to pharmacokinetics, which
-#'   describes how the body modifies the drug being used.}
-#'   \item{mechanism_of_action}{A component of pharmacodynamics that describes
-#'   the biochemical interaction through which a drug produces its intended
-#'   effect. May include the exact molecular protein or enzyme targets and/or
-#'   a description of the physiological effects produced.}
-#'   \item{metabolism}{A description of the chemical degradation of the drug
-#'   molecule within the body; most commonly by enzymes from the Cytochrome P450
-#'   (CYP) system in the liver.}
-#'   \item{absorption}{A description of the movement of the drug from the site
-#'   of administration into the bloodstream or target tissue.
-#'   Common pharmacokinetic metrics used to evaluate absorption include Area
-#'   Under the Curve (AUC), bioavailability (F), maximum concentration (Cmax),
-#'   and time to maximum concentration (Tmax)}
-#'   \item{half_life}{The period of time it takes for the amount of drug in the
-#'    body to be reduced by one half. Provides a description of how quickly the
-#'    drug is being eliminated and how much is available in the bloodstream.}
-#'   \item{protein_binding}{A description of the drug’s affinity for plama
-#'    proteins and the proportion of the drug that is bound to them when in
-#'    circulation within the body.}
-#'   \item{route_of_elimination}{A description of the pathway that is used to
-#'   excrete the drug from the body. Common pharmacokinetic parameters used to
-#'   evaluate excretion include elemination half life, renal clearance, and
-#'   tracking of radiolabeled compounds through the renal and GI system.}
-#'   \item{volume_of_distribution}{The Vd of a drug represents the degree to
-#'   which it is distributed into body tissue compared to the plasma.}
-#'   \item{clearance}{A pharmacokinetic measurement of the rate of removal of
-#'   the drug from plasma, expressed as mL/min; reflects the rate of elimination
-#'    of the drug.}
-#'   \item{international_brands}{The proprietary names used by the manufacturers
-#'    for commercially available forms of the drug, focusing on brand names for
-#'    products that are available in countries other than Canada and
-#'    the Unites States.}
-#'   \item{fda_label}{Contains a URL for accessing the uploaded United States
-#'   Food and Drug Administration (FDA) Monograph for this drug.}
-#'   \item{msds}{	Contains a URL for accessing the Material Safety Data Sheet
-#'    (MSDS)
-#'    for this drug.}
-#'   \item{toxicity}{Any adverse reaction, or side effect, that may or may not
-#'    occur with use of the drug. May be attributed to a number of effects
-#'    including: an enhanced therapeutic effect, rare anaphylactic reactions,
-#'    interactions with other medications, or unanticipated binding of the
-#'    molecule at different sites within the body.}
+#'   \item{fda_label}{Contains a URL for accessing the uploaded United States Food
+#'   and Drug Administration (FDA) Monograph for this drug.}
+#'   \item{msds}{Contains a URL for accessing the Material Safety Data Sheet
+#'   (MSDS) for this drug.}
 #' }
 #'
 #' @source \href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
 "Drugs"
+
+#' Drug Pharmacology
+#'
+#' Describes the use, mechanism of action, pharmacokinetics, pharmacodynamics,
+#'  and physiological or biochemical effects in the body.
+#'
+#' @return  a tibble with the following variables:
+#' \describe{
+#'  \item{indication}{The approved conditions, diseases, or states for which a
+#'  drug can safely and effectively be used. An indication is considered to be
+#'  FDA-approved when it has any of the following designations: NDA, ANDA, BLA,
+#'   or OTC. May also include indications in other countries, such as Canada
+#'   (through Health Canada) or in Europe
+#'   (through the European Medicines Agency).}
+#'  \item{pharmacodynamics}{A description of how the drug modifies or affects
+#'  the organism it is being used in. May include effects in the body that are
+#'   desired (enzyme or protein targets for example) and undesired
+#'   (also known as “side effects”). This is in contrast to pharmacokinetics,
+#'    which describes how the body modifies the drug being used.}
+#'  \item{mechanism_of_action}{A component of pharmacodynamics that describes
+#'  the biochemical interaction through which a drug produces its intended
+#'  effect. May include the exact molecular protein or enzyme targets and/or
+#'  a description of the physiological effects produced.}
+#'  \item{toxicity}{Any adverse reaction, or side effect, that may or may not
+#'  occur with use of the drug. May be attributed to a number of effects
+#'  including: an enhanced therapeutic effect, rare anaphylactic reactions,
+#'   interactions with other medications, or unanticipated binding of the
+#'   molecule at different sites within the body.}
+#'  \item{metabolism}{A description of the chemical degradation of the drug
+#'  molecule within the body; most commonly by enzymes from the
+#'  Cytochrome P450 (CYP) system in the liver.}
+#'  \item{absorption}{A description of the movement of the drug from the site
+#'   of administration into the bloodstream or target tissue. Common
+#'   pharmacokinetic metrics used to evaluate absorption include Area Under
+#'   the Curve (AUC), bioavailability (F), maximum concentration (Cmax), and
+#'   time to maximum concentration (Tmax).}
+#'  \item{half-life}{The period of time it takes for the amount of drug in the
+#'  body to be reduced by one half. Provides a description of how quickly the
+#'  drug is being eliminated and how much is available in the bloodstream.}
+#'  \item{protein-binding	}{A description of the drug’s affinity for plama
+#'  proteins and the proportion of the drug that is bound to them when in
+#'  circulation within the body.}
+#'  \item{route_of_elimination}{A description of the pathway that is used to
+#'  excrete the drug from the body. Common pharmacokinetic parameters used to
+#'  evaluate excretion include elemination half life, renal clearance, and
+#'  tracking of radiolabelled compounds through the renal and GI system.}
+#'  \item{volume_of_distribution}{The Vd of a drug represents the degree to
+#'  which it is distributed into body tissue compared to the plasma.}
+#'  \item{clearance}{A pharmacokinetic measurement of the rate of removal of the
+#'   drug from plasma, expressed as mL/min; reflects the rate of elimination of
+#'    the drug.}
+#'  \item{\emph{drugbank_id}}{drugbank id}
+#' }
+#' @source \href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
+"Pharmacology"
 
 #' Pathway Drugs
 #' Pathway Drugs
@@ -620,12 +655,12 @@ NULL
 #' The proprietary names used by the manufacturers for commercially available
 #' forms of the drug, focusing on brand names for products that are available
 #' in countries other than Canada and the Unites States.
-#' 
-#' Each drug may have one or more international brand. 
-#' 
+#'
+#' Each drug may have one or more international brand.
+#'
 #' @format a tibble with 3 variables:
 #' \describe{
-#'   \item{name}{The proprietary, well-known name for given to this drug by a 
+#'   \item{name}{The proprietary, well-known name for given to this drug by a
 #'   manufacturer.}
 #'   \item{company}{The company or manufacturer that uses this name.}
 #'   \item{parent_key}{drugbank id}
@@ -636,11 +671,11 @@ NULL
 
 #' Drug Manufacturers
 #'
-#' A list of companies that are manufacturing the commercially available forms 
+#' A list of companies that are manufacturing the commercially available forms
 #' of this drug that are available in Canada and the Unites States.
-#' 
-#' Each drug may have one or more Manufacturer. 
-#' 
+#'
+#' Each drug may have one or more Manufacturer.
+#'
 #' @format a tibble with 3 variables:
 #' \describe{
 #'   \item{text}{the name or description of the manufacturer}
@@ -654,9 +689,9 @@ NULL
 #'
 #' All commercially available products in which this drug is available in
 #'  combination with other drug molecules.
-#' 
-#' Each drug may have one or more mixture. 
-#' 
+#'
+#' Each drug may have one or more mixture.
+#'
 #' @format a tibble with 3 variables:
 #' \describe{
 #'   \item{name}{The proprietary name provided by the manufacturer for this
@@ -671,13 +706,13 @@ NULL
 #' Drug Packagers
 #'
 #' A list of companies that are packaging the drug for re-distribution.
-#' 
-#' Each drug may have one or more Packagers. 
-#' 
+#'
+#' Each drug may have one or more Packagers.
+#'
 #' @format a tibble with 3 variables:
 #' \describe{
 #'   \item{name}{}
-#'   \item{url}{A link to any companies that are packaging the drug for 
+#'   \item{url}{A link to any companies that are packaging the drug for
 #'   re-distribution}
 #'   \item{parent_key}{drugbank id}
 #' }
@@ -687,21 +722,21 @@ NULL
 
 #' Drug Patent
 #'
-#' A property right issued by the \href{http://www.uspto.gov/}{United States 
+#' A property right issued by the \href{http://www.uspto.gov/}{United States
 #' Patent and Trademark Office (USPTO)} to an inventor for a limited time,
-#'  in exchange for public disclosure of the invention when the patent is 
+#'  in exchange for public disclosure of the invention when the patent is
 #'  granted. Drugs may be issued multiple patents.
-#' 
-#' Each drug may have one or more patent. 
-#' 
+#'
+#' Each drug may have one or more patent.
+#'
 #' @format a tibble with 6 variables:
 #' \describe{
 #'   \item{number}{The patent number(s) associated with the drug}
 #'   \item{country}{The country that issued the patent rights}
 #'   \item{approved}{The date that the patent request was filed}
 #'   \item{expires}{The date that the patent rights expire}
-#'   \item{pediatric-extension}{Indicates whether or not a pediatric extension 
-#'   has been approved for the patent. Granted pediatric extensions provide an 
+#'   \item{pediatric-extension}{Indicates whether or not a pediatric extension
+#'   has been approved for the patent. Granted pediatric extensions provide an
 #'   additional 6 months of market protection}
 #'   \item{parent_key}{drugbank id}
 #' }
@@ -711,12 +746,12 @@ NULL
 
 #' Drug Pathways
 #'
-#' Metabolic, disease, and biological pathways that the drug is involved in, 
+#' Metabolic, disease, and biological pathways that the drug is involved in,
 #' as identified by the \href{http://smpdb.ca/}{Small Molecule Protein Database
 #'  (SMPDB)}.
-#' 
-#' Each drug may have one or more pathway. 
-#' 
+#'
+#' Each drug may have one or more pathway.
+#'
 #' @format a tibble with 4 variables:
 #' \describe{
 #'   \item{smpdb_id}{\href{http://smpdb.ca/}{Small Molecule Protein Database
@@ -732,9 +767,9 @@ NULL
 #' Drug PDB Entries
 #'
 #' Protein Data Bank (PDB) identifiers for this drug
-#' 
-#' Each drug may have one or more PDB Entry 
-#' 
+#'
+#' Each drug may have one or more PDB Entry
+#'
 #' @format a tibble with 2 variables:
 #' \describe{
 #'   \item{text}{PDB identifier}
@@ -747,9 +782,9 @@ NULL
 #' PFAMs
 #'
 #' The \href{http://pfam.xfam.org/}{protein family (pfam)} identifier
-#' 
-#' Each Polypeptid may have one or more PFAM. 
-#' 
+#'
+#' Each Polypeptid may have one or more PFAM.
+#'
 #' @format a tibble with 3 variables:
 #' \describe{
 #'   \item{identifier}{}
@@ -776,20 +811,20 @@ NULL
 #' Polypeptide
 #'
 #' Descriptions of identified polypeptide targets, enzymes, carriers, or transporters.
-#' 
+#'
 #' Each target, enzyme, carrier and transporter elements may include one or more
 #' polypeptide.
-#' 
+#'
 #' @format a tibble with 20 variables:
 #' \describe{
-#'   \item{id}{\href{http://www.uniprot.org/}{Universal Protein Resource 
+#'   \item{id}{\href{http://www.uniprot.org/}{Universal Protein Resource
 #'   (UniProt) identifier}}
-#'   \item{source}{Specifies whether the identified polypeptide ID is 
-#'   associated with any of the following UniProt knowledge bases: 
-#'   Swiss-Prot, which is manually annotated and reviewed, or TrEMBL, 
+#'   \item{source}{Specifies whether the identified polypeptide ID is
+#'   associated with any of the following UniProt knowledge bases:
+#'   Swiss-Prot, which is manually annotated and reviewed, or TrEMBL,
 #'   which is automatically annotated and not reviewed.}
 #'   \item{name}{}
-#'   \item{general_function}{General summary of the physiological function of 
+#'   \item{general_function}{General summary of the physiological function of
 #'   the polypeptide}
 #'   \item{specific_function}{A more specific description of the polypeptide’s
 #'    physiological function within the cell.}
@@ -804,7 +839,7 @@ NULL
 #'    polypeptide sequence.}
 #'   \item{theoretical_pi}{Theoretical isoelectric point.}
 #'   \item{molecular_weight}{The molecular weight of the polypeptide.}
-#'   \item{chromosome_location}{The chromosomal location of the polypeptide 
+#'   \item{chromosome_location}{The chromosomal location of the polypeptide
 #'   gene}
 #'   \item{organism}{The organism in which this polypeptide functions.}
 #'   \item{organism_ncbi_taxonomy_id}{}
@@ -816,7 +851,7 @@ NULL
 #' }
 #'
 #' @source \href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
-#' @name polypeptide 
+#' @name polypeptide
 NULL
 
 #' @rdname polypeptide
@@ -834,9 +869,9 @@ NULL
 #' Drug Prices
 #'
 #' Unit drug prices
-#' 
-#' Each drug may have one or more price 
-#' 
+#'
+#' Each drug may have one or more price
+#'
 #' @format a tibble with 5 variables:
 #' \describe{
 #'   \item{description}{}
@@ -851,18 +886,18 @@ NULL
 
 #' Drug Reactions
 #'
-#' A sequential representation of the metabolic reactions that this drug 
+#' A sequential representation of the metabolic reactions that this drug
 #' molecule is involved in. Depending on available information, this may include
-#' metabolizing enzymes, reaction type, substrates, products, pharmacological 
-#' activity of metabolites, and a structural representation of the biochemical 
+#' metabolizing enzymes, reaction type, substrates, products, pharmacological
+#' activity of metabolites, and a structural representation of the biochemical
 #' reactions.
-#' 
-#' Each drug may have one or more reaction. 
-#' 
+#'
+#' Each drug may have one or more reaction.
+#'
 #' @format a tibble with 6 variables:
 #' \describe{
 #'   \item{sequence}{Reactions are displayed within a numerical sequence.}
-#'   \item{left_drugbank_id}{The substrate of the reaction. May be a drug or a 
+#'   \item{left_drugbank_id}{The substrate of the reaction. May be a drug or a
 #'   metabolite.}
 #'   \item{left_drugbank_name}{}
 #'   \item{right_drugbank_id}{The product of the reaction. May be a drug or a
@@ -876,21 +911,21 @@ NULL
 
 #' Drug Salts
 #'
-#' Available salt forms of the drug. Ions such as hydrochloride, sodium, and 
-#' sulfate are often added to the drug molecule to increase solubility, 
+#' Available salt forms of the drug. Ions such as hydrochloride, sodium, and
+#' sulfate are often added to the drug molecule to increase solubility,
 #' dissolution, or absorption.
-#' 
-#' Each drug may have one or more salt. 
-#' 
+#'
+#' Each drug may have one or more salt.
+#'
 #' @format a tibble with 8 variables:
 #' \describe{
 #'   \item{drugbank-id}{DrugBank identifiers of the available salt form(s)}
 #'   \item{name}{Name of the available salt form(s)}
-#'   \item{unii}{Unique Ingredient Identifier (UNII) of the available 
+#'   \item{unii}{Unique Ingredient Identifier (UNII) of the available
 #'   salt form(s).}
 #'   \item{cas-number}{Chemical Abstracts Service (CAS) registry number assigned
 #'    to the salt form(s) of the drug.}
-#'   \item{inchikey}{\href{http://www.inchi-trust.org/}{IUPAC International 
+#'   \item{inchikey}{\href{http://www.inchi-trust.org/}{IUPAC International
 #'   Chemical Identifier (InChi)} key identifier for the available salt form(s)}
 #'   \item{average-mass}{Average molecular mass: the weighted average of the
 #'    isotopic masses of the salt.}
@@ -904,13 +939,13 @@ NULL
 #' Drug Sequences
 #'
 #' The amino acid sequence; provided if the drug is a peptide.
-#' 
+#'
 #' Each drug may have one or more sequence.
-#' 
-#' Describes peptide sequences of biotech drugs. The sequence variable contains 
-#' a textual representation of the sequence, in the format described by the 
+#'
+#' Describes peptide sequences of biotech drugs. The sequence variable contains
+#' a textual representation of the sequence, in the format described by the
 #' format variable. Currently, only the \strong{FASTA} format is used.
-#' 
+#'
 #' @format a tibble with 3 variables:
 #' \describe{
 #'   \item{sequence}{}
@@ -923,65 +958,65 @@ NULL
 
 #' Drug Calculated Properties
 #'
-#' Drug properties that have been predicted by 
-#' ChemAxon or 
-#' \href{http://www.vcclab.org/lab/alogps/}{ALOGPS} based on the imputed 
-#' chemical structure. Associated links below will redirect to descriptions of 
+#' Drug properties that have been predicted by
+#' ChemAxon or
+#' \href{http://www.vcclab.org/lab/alogps/}{ALOGPS} based on the imputed
+#' chemical structure. Associated links below will redirect to descriptions of
 #' the specific term.
-#' 
-#' Each drug may have one or more calculated property. 
-#' 
+#'
+#' Each drug may have one or more calculated property.
+#'
 #' The following calculated properties are provided:
 #' \tabular{ll}{
 #' \strong{Property} \tab \strong{Description} \cr
-#' logP \tab The predicted partition coefficient (LogP) based on the ratio of 
-#' solubility of the molecule in 1-octanol compared to water; predicted by 
+#' logP \tab The predicted partition coefficient (LogP) based on the ratio of
+#' solubility of the molecule in 1-octanol compared to water; predicted by
 #' \href{http://www.vcclab.org/lab/alogps/}{ALOGPS} \cr
-#' logS \tab The predicted solubility (LogS) of the molecule; 
+#' logS \tab The predicted solubility (LogS) of the molecule;
 #' predicted by \href{http://www.vcclab.org/lab/alogps/}{ALOGPS}. \cr
-#' IUPAC Name \tab The predicted International Union of Pure and Applied 
+#' IUPAC Name \tab The predicted International Union of Pure and Applied
 #' Chemistry (IUPAC) nomenclature for the structure; predicted by ChemAxon \cr
-#' Traditional IUPAC Name	\tab The non-systematic (or common) name for the 
+#' Traditional IUPAC Name	\tab The non-systematic (or common) name for the
 #' molecule, which is not recognized by any formal nomenclature system;
 #'imported from ChemAxon. \cr
-#' Molecular Weight	 \tab The predicted ratio of the average mass of one 
+#' Molecular Weight	 \tab The predicted ratio of the average mass of one
 #' molecule of an element or compound to one twelfth of the mass of an atom of carbon-12; calculated by ChemAxon.\cr
-#' Monoisotopic Weight \tab The predicted mass of the most abundant isotope of 
+#' Monoisotopic Weight \tab The predicted mass of the most abundant isotope of
 #' the drug; calculated by ChemAxon. \cr
-#' SMILES \tab The simplified molecular-input line-entry system (SMILES) is 
-#' a line notation used for describing the structure of chemical species using 
+#' SMILES \tab The simplified molecular-input line-entry system (SMILES) is
+#' a line notation used for describing the structure of chemical species using
 #' short ASCII strings; calculated by ChemAxon. \cr
 #' InChI \tab A prediction of the IUPAC International Chemical Identifier
 #'  (InChI); imported by ChemAxon. \cr
 #' InChIKey \tab The condensed digital representation of the IUPAC International
 #'  Chemical Identifier (InChI); imported by ChemAxon. \cr
-#' Polar Surface Area (PSA)	\tab A descriptor, based on the polarized atoms of 
-#' the molecule, that allows estimation of transport properties and of the 
-#' passive molecular transport through membranes of the drug; predicted by 
+#' Polar Surface Area (PSA)	\tab A descriptor, based on the polarized atoms of
+#' the molecule, that allows estimation of transport properties and of the
+#' passive molecular transport through membranes of the drug; predicted by
 #' ChemAxon.\cr
-#' Refractivity \tab The predicted molar refractivity of the molecule, which is 
-#' strongly related to the volume of the molecules and to London dispersive 
-#' forces that play crucial part in drug-receptor interactions; 
+#' Refractivity \tab The predicted molar refractivity of the molecule, which is
+#' strongly related to the volume of the molecules and to London dispersive
+#' forces that play crucial part in drug-receptor interactions;
 #' predicted by ChemAxon. \cr
-#' Polarizability \tab The predicted relative tendency of the electron cloud 
+#' Polarizability \tab The predicted relative tendency of the electron cloud
 #' (charge distribution) of the molecule to be distorted by an external electric
 #'  field; polarizability values predicted by ChemAxon. \cr
-#' Rotatable Bond Count	\tab The predicted number of rotatable bonds in the 
-#' molecule; predicted by ChemAxon. Unsaturated bonds, and single bonds 
-#' connected to hydrogens or terminal atoms, single bonds of amides, 
-#' sulphonamides and those connecting two hindered aromatic rings (having at 
+#' Rotatable Bond Count	\tab The predicted number of rotatable bonds in the
+#' molecule; predicted by ChemAxon. Unsaturated bonds, and single bonds
+#' connected to hydrogens or terminal atoms, single bonds of amides,
+#' sulphonamides and those connecting two hindered aromatic rings (having at
 #' least three ortho substituents) are considered non-rotatable. \cr
-#' H Bond Acceptor Count	\tab A calculation of the sum of the hydrogen bond 
-#' acceptor atoms. An acceptor atom always has a lone electron pair/lone 
-#' electron pairs that is capable of establishing a H bond. Predicted by 
+#' H Bond Acceptor Count	\tab A calculation of the sum of the hydrogen bond
+#' acceptor atoms. An acceptor atom always has a lone electron pair/lone
+#' electron pairs that is capable of establishing a H bond. Predicted by
 #' ChemAxon. \cr
-#' H Bond Donor Count	\tab A calculation of the sum of the atoms in the 
+#' H Bond Donor Count	\tab A calculation of the sum of the atoms in the
 #' molecule which have hydrogen bond donor property. Predicted by ChemAxon. \cr
 #' pKa (strongest acidic)	\tab The strongest acidic pka value of the molecule;
 #'  predicted by ChemAxon. \cr
-#' pKa (strongest basic) \tab The strongest basic pka value of the molecule; 
+#' pKa (strongest basic) \tab The strongest basic pka value of the molecule;
 #' predicted by ChemAxon. \cr
-#' Physiological Charge	\tab Charge of the molecule at physiological pH; 
+#' Physiological Charge	\tab Charge of the molecule at physiological pH;
 #' predicted by ChemAxon.\cr
 #' Number of Rings \tab A calculation of the number of rings in the molecule;
 #'  predicted by ChemAxon. \cr
@@ -989,23 +1024,23 @@ NULL
 #'  the systemic circulation; predicted by ChemAxon.\cr
 #' Rule of Five	\tab A reflection of the absorption or permeation of a molecule;
 #'  considered “yes” when the molecular weight is under 500 g/mol, the value of
-#'   logP is lower than 5, and the molecule has utmost 5 H-donor and 
+#'   logP is lower than 5, and the molecule has utmost 5 H-donor and
 #'   10 H-acceptor atoms; predicted by ChemAxon. \cr
 #' Ghose Filter	\tab A filter that defines drug-likeness constraints as follows:
-#'  calculated log P is between -0.4 and 5.6, molecular weight is between 
-#'  160 and 480, molar refractivity is between 40 and 130, and the total number 
+#'  calculated log P is between -0.4 and 5.6, molecular weight is between
+#'  160 and 480, molar refractivity is between 40 and 130, and the total number
 #'  of atoms is between 20 and 70. Imported from ChemAxon. \cr
-#' MDDR-Like Rule	\tab Indicates compliance of drug-like characteristics based 
+#' MDDR-Like Rule	\tab Indicates compliance of drug-like characteristics based
 #' on number of rings, rigid bonds and rotatable bonds;
 #'  calculated by ChemAxon. \cr
 #' }
-#' 
+#'
 #' @format a tibble with 3 variables:
 #' \describe{
 #'   \item{kind}{Name of the property}
-#'   \item{value}{Predicted physicochemical properties; obtained by the use of 
+#'   \item{value}{Predicted physicochemical properties; obtained by the use of
 #'   prediction software such as ALGOPS and ChemAxon}
-#'   \item{source}{Name of the software used to calculate this property, 
+#'   \item{source}{Name of the software used to calculate this property,
 #'   either ChemAxon or ALOGPS}
 #'   \item{parent_key}{drugbank id}
 #' }
@@ -1015,18 +1050,18 @@ NULL
 
 #' SNP Adverse Drug Reactions
 #'
-#' The adverse drug reactions that may occur as a result of the listed single 
+#' The adverse drug reactions that may occur as a result of the listed single
 #' nucleotide polymorphisms (SNPs).
-#' 
-#' Each drug may have one or more SNP Adverse. 
-#' 
+#'
+#' Each drug may have one or more SNP Adverse.
+#'
 #' @format a tibble with 9 variables:
 #' \describe{
 #'   \item{protein-name}{Proteins involved in this SNP.}
 #'   \item{gene-symbol}{Genes involved in this SNP.}
-#'   \item{uniprot-id}{\href{http://www.uniprot.org/}{Universal Protein 
+#'   \item{uniprot-id}{\href{http://www.uniprot.org/}{Universal Protein
 #'   Resource (UniProt)} identifiers for proteins involved in this pathway.}
-#'   \item{rs-id}{The \href{https://www.ncbi.nlm.nih.gov/projects/SNP/}{SNP 
+#'   \item{rs-id}{The \href{https://www.ncbi.nlm.nih.gov/projects/SNP/}{SNP
 #'   Database} identifier for this single nucleotide polymorphism.}
 #'   \item{allele}{The alleles associated with the identified SNP.}
 #'   \item{adverse-reaction}{}
@@ -1041,17 +1076,17 @@ NULL
 #' Drugs Synonyms
 #'
 #' Other names or identifiers that are associated with the associated Drug
-#' 
-#' Each element may have one or more synonyms. 
-#' 
+#'
+#' Each element may have one or more synonyms.
+#'
 #' @format a tibble with 4 variables:
 #' \describe{
 #'   \item{synonym}{alternative name}
 #'   \item{language}{Names of the drug in languages other than English.}
 #'   \item{coder}{Organisation or source providing the synonym. For example,
 #'    INN indicates the synonym is an International Nonproprietary Name,
-#'     while IUPAC indicates the synonym is the nomenclature designated by 
-#'     the \href{https://iupac.org/}{International Union of Pure and Applied 
+#'     while IUPAC indicates the synonym is the nomenclature designated by
+#'     the \href{https://iupac.org/}{International Union of Pure and Applied
 #'     Chemistry.}}
 #'   \item{drugbank-id}{drugbank id}
 #' }
@@ -1062,9 +1097,9 @@ NULL
 #' Polypeptide Synonyms
 #'
 #' Alternate names or identifiers that may be associated with this polypeptide
-#' 
-#' Each element may have one or more synonyms. 
-#' 
+#'
+#' Each element may have one or more synonyms.
+#'
 #' @format a tibble with 2 variables:
 #' \describe{
 #'   \item{syn}{alternative name}
@@ -1089,45 +1124,45 @@ NULL
 
 #' Drug Products
 #'
-#' A list of commercially available products in Canada and the United States 
+#' A list of commercially available products in Canada and the United States
 #' that contain the drug.
-#' 
-#' Each drug may have one or more product. 
-#' 
+#'
+#' Each drug may have one or more product.
+#'
 #' @format a tibble with 19 variables:
 #' \describe{
-#'   \item{name}{The proprietary name(s) provided by the manufacturer for any 
+#'   \item{name}{The proprietary name(s) provided by the manufacturer for any
 #'   commercially available products containing this drug.}
 #'   \item{labeller}{The corporation responsible for labelling this product.}
 #'   \item{ndc-id}{The National Drug Code (NDC) identifier of
 #'    the drug.}
 #'   \item{ndc-product-code	}{The National Drug Code (NDC) product code from the
 #'    FDA National Drug Code directory.}
-#'   \item{dpd-id	}{Drug Product Database (DPD) identification number 
-#'   (a.k.a. DIN) from the Canadian Drug Product Database. Only present for 
+#'   \item{dpd-id	}{Drug Product Database (DPD) identification number
+#'   (a.k.a. DIN) from the Canadian Drug Product Database. Only present for
 #'   drugs that are marketed in Canada.}
 #'   \item{ema-product-code}{EMA product code from the European Medicines Agency
-#'    Database. Only present for products that are authorised by central 
+#'    Database. Only present for products that are authorised by central
 #'    procedure for marketing in the European Union.}
-#'   \item{ema-ma-number}{EMA marketing authorisation number from the European 
+#'   \item{ema-ma-number}{EMA marketing authorisation number from the European
 #'   Medicines Agency Database. Only present for products that are authorised by
 #'    central procedure for marketing in the European Union.}
 #'   \item{started-marketing-on}{The starting date for market approval.}
 #'   \item{ended-marketing-on}{The ending date for market approval.}
-#'   \item{dosage-form}{The pharmaceutical formulation by which the drug is 
+#'   \item{dosage-form}{The pharmaceutical formulation by which the drug is
 #'   introduced into the body.}
-#'   \item{strength}{The amount of active drug ingredient provided in the 
+#'   \item{strength}{The amount of active drug ingredient provided in the
 #'   dosage.}
 #'   \item{route}{The path by which the drug or product is taken into the body.}
-#'   \item{fda-application-number}{The New Drug Application [NDA] number 
+#'   \item{fda-application-number}{The New Drug Application [NDA] number
 #'   assigned to this drug by the FDA.}
 #'   \item{over-the-counter}{A list of Over The Counter (OTC) forms of the drug}
 #'   \item{generic}{Whether this product is a generic drug}
-#'   \item{approved}{Indicates whether this drug has been approved by the 
+#'   \item{approved}{Indicates whether this drug has been approved by the
 #'   regulating government.}
-#'   \item{country}{The country where this commercially available drug has been 
+#'   \item{country}{The country where this commercially available drug has been
 #'   approved.}
-#'   \item{source}{Source of this product information. For example, a value of 
+#'   \item{source}{Source of this product information. For example, a value of
 #'   DPD indicates this information was retrieved from the Canadian Drug Product Database.}
 #'   \item{parent_key}{drugbank id}
 #' }
@@ -1138,18 +1173,18 @@ NULL
 #' Drug SNP Effects
 #'
 #' A list of single nucleotide polymorphisms (SNPs) relevant to drug activity or
-#'  metabolism, and the effects these may have on pharmacological activity. 
-#'  SNP effects in the patient may require close monitoring, an increase or 
+#'  metabolism, and the effects these may have on pharmacological activity.
+#'  SNP effects in the patient may require close monitoring, an increase or
 #'  decrease in dose, or a change in therapy.
-#' 
-#' Each drug may have one or more SNP Effect. 
-#' 
+#'
+#' Each drug may have one or more SNP Effect.
+#'
 #' @format a tibble with 9 variables:
 #' \describe{
 #'   \item{protein-name}{Proteins involved in this SNP.}
 #'   \item{gene-symbol}{Genes involved in this SNP.}
-#'   \item{uniprot-id	}{\href{http://www.uniprot.org/}{Universal Protein 
-#'   Resource (UniProt)} identifiers for 
+#'   \item{uniprot-id	}{\href{http://www.uniprot.org/}{Universal Protein
+#'   Resource (UniProt)} identifiers for
 #'   proteins involved in this pathway.}
 #'   \item{rs-id}{The \href{https://www.ncbi.nlm.nih.gov/projects/SNP/}{SNP
 #'    Database} identifier for this single nucleotide polymorphism.}

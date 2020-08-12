@@ -8,7 +8,7 @@
 a tibble with 6 variables:
 \describe{
   \item{sequence}{Reactions are displayed within a numerical sequence.}
-  \item{left_drugbank_id}{The substrate of the reaction. May be a drug or a 
+  \item{left_drugbank_id}{The substrate of the reaction. May be a drug or a
   metabolite.}
   \item{left_drugbank_name}{}
   \item{right_drugbank_id}{The product of the reaction. May be a drug or a
@@ -24,10 +24,10 @@ a tibble with 6 variables:
 Reactions_Drug
 }
 \description{
-A sequential representation of the metabolic reactions that this drug 
+A sequential representation of the metabolic reactions that this drug
 molecule is involved in. Depending on available information, this may include
-metabolizing enzymes, reaction type, substrates, products, pharmacological 
-activity of metabolites, and a structural representation of the biochemical 
+metabolizing enzymes, reaction type, substrates, products, pharmacological
+activity of metabolites, and a structural representation of the biochemical
 reactions.
 }
 \details{

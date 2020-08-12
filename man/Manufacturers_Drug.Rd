@@ -18,7 +18,7 @@ a tibble with 3 variables:
 Manufacturers_Drug
 }
 \description{
-A list of companies that are manufacturing the commercially available forms 
+A list of companies that are manufacturing the commercially available forms
 of this drug that are available in Canada and the Unites States.
 }
 \details{

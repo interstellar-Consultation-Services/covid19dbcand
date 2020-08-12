@@ -11,14 +11,14 @@
 \format{
 a tibble with 20 variables:
 \describe{
-  \item{id}{\href{http://www.uniprot.org/}{Universal Protein Resource 
+  \item{id}{\href{http://www.uniprot.org/}{Universal Protein Resource
   (UniProt) identifier}}
-  \item{source}{Specifies whether the identified polypeptide ID is 
-  associated with any of the following UniProt knowledge bases: 
-  Swiss-Prot, which is manually annotated and reviewed, or TrEMBL, 
+  \item{source}{Specifies whether the identified polypeptide ID is
+  associated with any of the following UniProt knowledge bases:
+  Swiss-Prot, which is manually annotated and reviewed, or TrEMBL,
   which is automatically annotated and not reviewed.}
   \item{name}{}
-  \item{general_function}{General summary of the physiological function of 
+  \item{general_function}{General summary of the physiological function of
   the polypeptide}
   \item{specific_function}{A more specific description of the polypeptide’s
    physiological function within the cell.}
@@ -33,7 +33,7 @@ a tibble with 20 variables:
    polypeptide sequence.}
   \item{theoretical_pi}{Theoretical isoelectric point.}
   \item{molecular_weight}{The molecular weight of the polypeptide.}
-  \item{chromosome_location}{The chromosomal location of the polypeptide 
+  \item{chromosome_location}{The chromosomal location of the polypeptide
   gene}
   \item{organism}{The organism in which this polypeptide functions.}
   \item{organism_ncbi_taxonomy_id}{}
@@ -46,11 +46,11 @@ a tibble with 20 variables:
 
 An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 3 rows and 20 columns.
 
-An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 29 rows and 20 columns.
+An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 35 rows and 20 columns.
 
-An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 36 rows and 20 columns.
+An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 50 rows and 20 columns.
 
-An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 16 rows and 20 columns.
+An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 17 rows and 20 columns.
 }
 \source{
 \href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}

@@ -11,8 +11,8 @@ a tibble with 4 variables:
   \item{language}{Names of the drug in languages other than English.}
   \item{coder}{Organisation or source providing the synonym. For example,
    INN indicates the synonym is an International Nonproprietary Name,
-    while IUPAC indicates the synonym is the nomenclature designated by 
-    the \href{https://iupac.org/}{International Union of Pure and Applied 
+    while IUPAC indicates the synonym is the nomenclature designated by
+    the \href{https://iupac.org/}{International Union of Pure and Applied
     Chemistry.}}
   \item{drugbank-id}{drugbank id}
 }

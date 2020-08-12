@@ -8,7 +8,7 @@
 a tibble with 3 variables:
 \describe{
   \item{name}{}
-  \item{url}{A link to any companies that are packaging the drug for 
+  \item{url}{A link to any companies that are packaging the drug for
   re-distribution}
   \item{parent_key}{drugbank id}
 }

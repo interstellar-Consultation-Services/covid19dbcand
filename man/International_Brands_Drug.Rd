@@ -7,7 +7,7 @@
 \format{
 a tibble with 3 variables:
 \describe{
-  \item{name}{The proprietary, well-known name for given to this drug by a 
+  \item{name}{The proprietary, well-known name for given to this drug by a
   manufacturer.}
   \item{company}{The company or manufacturer that uses this name.}
   \item{parent_key}{drugbank id}

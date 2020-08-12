@@ -24,8 +24,8 @@ The amino acid sequence; provided if the drug is a peptide.
 \details{
 Each drug may have one or more sequence.
 
-Describes peptide sequences of biotech drugs. The sequence variable contains 
-a textual representation of the sequence, in the format described by the 
+Describes peptide sequences of biotech drugs. The sequence variable contains
+a textual representation of the sequence, in the format described by the
 format variable. Currently, only the \strong{FASTA} format is used.
 }
 \keyword{datasets}

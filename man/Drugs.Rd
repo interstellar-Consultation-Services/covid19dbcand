@@ -5,91 +5,41 @@
 \alias{Drugs}
 \title{Drugs}
 \format{
-a tibble with 29 variables:
-\describe{
-  \item{primary_id}{drugbank id}
-  \item{other_ids}{Other identifiers that may be associated with the drug.}
-  \item{type}{Either small molecule, or biotech.
-   Biotech is used for any drug that is derived from living systems or
-   organisms, usually composed of high molecular weight mixtures of protein,
-   while small molecule describes a low molecular weight organic compound.}
-  \item{created}{Date that this drug was first added to DrugBank.}
-  \item{updated}{Denotes when this drug was last updated in DrugBank}
-  \item{name}{}
-  \item{description}{Descriptions of drug chemical properties,
-   history and regulatory status}
-  \item{simple_description}{The simple description uses non-technical
-  language and summarizes the most common uses for the drug}
-  \item{clinical_description}{The clinical description includes the id
-  details about indications and mechanism to quickly summarize the drug for
-  a professional user.}
-  \item{cas_number}{The Chemical Abstracts Service (CAS) registry number
-  assigned to the drug.}
-  \item{unii}{Unique Ingredient Identifier (UNII) of this drug.}
-  \item{average_mass}{The weighted average of the isotopic masses of the
-  drug.}
-  \item{monoisotopic_mass}{The mass of the most abundant isotope of the drug}
-  \item{state}{One of solid, liquid, or gas.}
-  \item{synthesis_reference}{Citation for synthesis of the drug molecule.}
-  \item{indication}{The approved conditions, diseases, or states for which
-  a drug can safely and effectively be used. An indication is considered to
-  be FDA-approved when it has any of the following designations: NDA, ANDA,
-  BLA, or OTC. May also include indications in other countries, such as
-  Canada (through Health Canada) or in Europe
-  (through the European Medicines Agency).}
-  \item{pharmacodynamics}{A description of how the drug modifies or affects
-  the organism it is being used in. May include effects in the body that are
-  desired (enzyme or protein targets for example) and undesired (also known
-  as “side effects”). This is in contrast to pharmacokinetics, which
-  describes how the body modifies the drug being used.}
-  \item{mechanism_of_action}{A component of pharmacodynamics that describes
-  the biochemical interaction through which a drug produces its intended
-  effect. May include the exact molecular protein or enzyme targets and/or
-  a description of the physiological effects produced.}
-  \item{metabolism}{A description of the chemical degradation of the drug
-  molecule within the body; most commonly by enzymes from the Cytochrome P450
-  (CYP) system in the liver.}
-  \item{absorption}{A description of the movement of the drug from the site
-  of administration into the bloodstream or target tissue.
-  Common pharmacokinetic metrics used to evaluate absorption include Area
-  Under the Curve (AUC), bioavailability (F), maximum concentration (Cmax),
-  and time to maximum concentration (Tmax)}
-  \item{half_life}{The period of time it takes for the amount of drug in the
-   body to be reduced by one half. Provides a description of how quickly the
-   drug is being eliminated and how much is available in the bloodstream.}
-  \item{protein_binding}{A description of the drug’s affinity for plama
-   proteins and the proportion of the drug that is bound to them when in
-   circulation within the body.}
-  \item{route_of_elimination}{A description of the pathway that is used to
-  excrete the drug from the body. Common pharmacokinetic parameters used to
-  evaluate excretion include elemination half life, renal clearance, and
-  tracking of radiolabeled compounds through the renal and GI system.}
-  \item{volume_of_distribution}{The Vd of a drug represents the degree to
-  which it is distributed into body tissue compared to the plasma.}
-  \item{clearance}{A pharmacokinetic measurement of the rate of removal of
-  the drug from plasma, expressed as mL/min; reflects the rate of elimination
-   of the drug.}
-  \item{international_brands}{The proprietary names used by the manufacturers
-   for commercially available forms of the drug, focusing on brand names for
-   products that are available in countries other than Canada and
-   the Unites States.}
-  \item{fda_label}{Contains a URL for accessing the uploaded United States
-  Food and Drug Administration (FDA) Monograph for this drug.}
-  \item{msds}{	Contains a URL for accessing the Material Safety Data Sheet
-   (MSDS)
-   for this drug.}
-  \item{toxicity}{Any adverse reaction, or side effect, that may or may not
-   occur with use of the drug. May be attributed to a number of effects
-   including: an enhanced therapeutic effect, rare anaphylactic reactions,
-   interactions with other medications, or unanticipated binding of the
-   molecule at different sites within the body.}
-}
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 33 rows and 15 columns.
 }
 \source{
 \href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
 }
 \usage{
 Drugs
+}
+\value{
+a tibble with 15 variables:
+\describe{
+  \item{primary_key}{Drugbank id}
+  \item{other_keys}{Other identifiers that may be associated with the drug}
+  \item{type}{	Either small molecule, or biotech. Biotech is used for any
+  drug that is derived from living systems or organisms, usually composed of
+   high molecular weight mixtures of protein, while small molecule describes
+    a low molecular weight organic compound.}
+  \item{name}{}
+  \item{created}{Date that this drug was first added to DrugBank.}
+  \item{updated}{Denotes when this drug was last updated in DrugBank.}
+  \item{description}{Descriptions of drug chemical properties,
+   history and regulatory status.}
+  \item{cas_number}{The Chemical Abstracts Service (CAS) registry number
+   assigned to the drug.}
+  \item{\emph{unii}}{Unique Ingredient Identifier (UNII) of this drug.}
+  \item{average_mass}{The weighted average of the isotopic masses of the
+  drug}
+  \item{state}{One of solid, liquid, or gas}
+  \item{monoisotopic_mass}{The mass of the most abundant isotope of the drug}
+  \item{synthesis_reference}{Citation for synthesis of the drug molecule.}
+  \item{fda_label}{Contains a URL for accessing the uploaded United States Food
+  and Drug Administration (FDA) Monograph for this drug.}
+  \item{msds}{Contains a URL for accessing the Material Safety Data Sheet
+  (MSDS) for this drug.}
+}
 }
 \description{
 Substance other than water and food that when administered by any route can

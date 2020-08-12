@@ -11,8 +11,8 @@ a tibble with 6 variables:
   \item{country}{The country that issued the patent rights}
   \item{approved}{The date that the patent request was filed}
   \item{expires}{The date that the patent rights expire}
-  \item{pediatric-extension}{Indicates whether or not a pediatric extension 
-  has been approved for the patent. Granted pediatric extensions provide an 
+  \item{pediatric-extension}{Indicates whether or not a pediatric extension
+  has been approved for the patent. Granted pediatric extensions provide an
   additional 6 months of market protection}
   \item{parent_key}{drugbank id}
 }
@@ -24,9 +24,9 @@ a tibble with 6 variables:
 Patents_Drug
 }
 \description{
-A property right issued by the \href{http://www.uspto.gov/}{United States 
+A property right issued by the \href{http://www.uspto.gov/}{United States
 Patent and Trademark Office (USPTO)} to an inventor for a limited time,
- in exchange for public disclosure of the invention when the patent is 
+ in exchange for public disclosure of the invention when the patent is
  granted. Drugs may be issued multiple patents.
 }
 \details{

@@ -9,11 +9,11 @@ a tibble with 8 variables:
 \describe{
   \item{drugbank-id}{DrugBank identifiers of the available salt form(s)}
   \item{name}{Name of the available salt form(s)}
-  \item{unii}{Unique Ingredient Identifier (UNII) of the available 
+  \item{unii}{Unique Ingredient Identifier (UNII) of the available
   salt form(s).}
   \item{cas-number}{Chemical Abstracts Service (CAS) registry number assigned
    to the salt form(s) of the drug.}
-  \item{inchikey}{\href{http://www.inchi-trust.org/}{IUPAC International 
+  \item{inchikey}{\href{http://www.inchi-trust.org/}{IUPAC International
   Chemical Identifier (InChi)} key identifier for the available salt form(s)}
   \item{average-mass}{Average molecular mass: the weighted average of the
    isotopic masses of the salt.}
@@ -28,8 +28,8 @@ a tibble with 8 variables:
 Salts_Drug
 }
 \description{
-Available salt forms of the drug. Ions such as hydrochloride, sodium, and 
-sulfate are often added to the drug molecule to increase solubility, 
+Available salt forms of the drug. Ions such as hydrochloride, sodium, and
+sulfate are often added to the drug molecule to increase solubility,
 dissolution, or absorption.
 }
 \details{
