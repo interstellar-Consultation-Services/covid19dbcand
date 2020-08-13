@@ -8,6 +8,8 @@ status](https://www.r-pkg.org/badges/version/covid19dbcand)](https://CRAN.R-proj
 [![Rdoc](https://www.rdocumentation.org/badges/version/covid19dbcand)](https://www.rdocumentation.org/packages/covid19dbcand)
 [![metacran
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/covid19dbcand)](https://cran.r-project.org/package=covid19dbcand)
+[![Travis build
+status](https://travis-ci.com/MohammedFCIS/covid19dbcand.svg?branch=master)](https://travis-ci.com/MohammedFCIS/covid19dbcand)
 <!-- badges: end -->
 
 ## Overview
