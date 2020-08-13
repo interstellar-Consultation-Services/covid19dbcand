@@ -3,6 +3,8 @@
 language: R
 cache: packages
 
+r_packages:
+  - vcdExtra
 after_success:
   - Rscript -e 'library(pkgdown); build_site()'
 
