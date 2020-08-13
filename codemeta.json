@@ -1,0 +1,81 @@
+{
+  "@context": ["https://doi.org/10.5063/schema/codemeta-2.0", "http://schema.org"],
+  "@type": "SoftwareSourceCode",
+  "identifier": "covid19dbcand",
+  "description": "Provides different datasets parsed from 'Drugbank' \n    <https://www.drugbank.ca/covid-19> database using 'dbparser' package. \n    It is a smaller version from 'dbdataset' package. It contains only information\n    about COVID-19 possible treatment.",
+  "name": "covid19dbcand: Selected 'Drugbank' Drugs for COVID-19 Treatment Related Data in R Format",
+  "codeRepository": "https://github.com/MohammedFCIS/covid19dbcand",
+  "issueTracker": "https://github.com/MohammedFCIS/covid19dbcand/issues",
+  "license": "https://spdx.org/licenses/CC0-1.0",
+  "version": "0.1.1",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "R",
+    "version": "4.0.0",
+    "url": "https://r-project.org"
+  },
+  "runtimePlatform": "R version 4.0.0 (2020-04-24)",
+  "provider": {
+    "@id": "https://cran.r-project.org",
+    "@type": "Organization",
+    "name": "Comprehensive R Archive Network (CRAN)",
+    "url": "https://cran.r-project.org"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Mohammed",
+      "familyName": "Ali",
+      "email": "moh_fcis@yahoo.com"
+    }
+  ],
+  "contributor": {},
+  "copyrightHolder": {},
+  "funder": {},
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Mohammed",
+      "familyName": "Ali",
+      "email": "moh_fcis@yahoo.com"
+    }
+  ],
+  "softwareSuggestions": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "knitr",
+      "name": "knitr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=knitr"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "rmarkdown",
+      "name": "rmarkdown",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=rmarkdown"
+    }
+  ],
+  "softwareRequirements": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "R",
+      "name": "R",
+      "version": ">= 3.1"
+    }
+  ],
+  "releaseNotes": "https://github.com/MohammedFCIS/covid19dbcand/blob/master/NEWS.md",
+  "readme": "https://github.com/MohammedFCIS/covid19dbcand/blob/master/README.md",
+  "contIntegration": "https://travis-ci.com/MohammedFCIS/covid19dbcand",
+  "relatedLink": "https://CRAN.R-project.org/package=covid19dbcand"
+}
