@@ -6,4 +6,4 @@ cache: packages
 after_success:
   - Rscript -e 'library(pkgdown); build_site()'
 
-before_cache: Rscript -e 'remotes::install_cran("pkgdown")'
+before_cache: Rscript -e 'remotes::install_cran(c("pkgdown", "vcdExtra"))'
