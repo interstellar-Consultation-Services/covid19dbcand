@@ -20,6 +20,10 @@ URL: https://github.com/MohammedFCIS/covid19dbcand
 BugReports: https://github.com/MohammedFCIS/covid19dbcand/issues
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    data.tree,
+    DT,
+    networkD3,
+    vcdExtram
 VignetteBuilder: knitr
 RoxygenNote: 7.1.0
