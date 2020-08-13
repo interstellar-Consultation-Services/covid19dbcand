@@ -40,10 +40,10 @@
 
 
 <meta property="og:title" content="Drug Calculated Properties — Calculated_Properties_Drug" />
-<meta property="og:description" content="Drug properties that have been predicted by 
-ChemAxon or 
-ALOGPS based on the imputed 
-chemical structure. Associated links below will redirect to descriptions of 
+<meta property="og:description" content="Drug properties that have been predicted by
+ChemAxon or
+ALOGPS based on the imputed
+chemical structure. Associated links below will redirect to descriptions of
 the specific term." />
 
 
@@ -89,19 +89,10 @@ the specific term." />
   </a>
 </li>
 <li>
-  <a href="../reference/index.html">Reference</a>
+  <a href="../articles/covid19dbcand.html">Get started</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Articles
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="../articles/Example.html">Example</a>
-    </li>
-  </ul>
+<li>
+  <a href="../reference/index.html">Reference</a>
 </li>
 <li>
   <a href="../news/index.html">Changelog</a>
@@ -133,10 +124,10 @@ the specific term." />
     </div>
 
     <div class="ref-description">
-    <p>Drug properties that have been predicted by 
-ChemAxon or 
-<a href='http://www.vcclab.org/lab/alogps/'>ALOGPS</a> based on the imputed 
-chemical structure. Associated links below will redirect to descriptions of 
+    <p>Drug properties that have been predicted by
+ChemAxon or
+<a href='http://www.vcclab.org/lab/alogps/'>ALOGPS</a> based on the imputed
+chemical structure. Associated links below will redirect to descriptions of
 the specific term.</p>
     </div>
 
@@ -147,9 +138,9 @@ the specific term.</p>
 
     <p>a tibble with 3 variables:</p><dl'>
   <dt>kind</dt><dd><p>Name of the property</p></dd>
-  <dt>value</dt><dd><p>Predicted physicochemical properties; obtained by the use of 
+  <dt>value</dt><dd><p>Predicted physicochemical properties; obtained by the use of
   prediction software such as ALGOPS and ChemAxon</p></dd>
-  <dt>source</dt><dd><p>Name of the software used to calculate this property, 
+  <dt>source</dt><dd><p>Name of the software used to calculate this property,
   either ChemAxon or ALOGPS</p></dd>
   <dt>parent_key</dt><dd><p>drugbank id</p></dd>
 
@@ -163,54 +154,54 @@ the specific term.</p>
     <p>Each drug may have one or more calculated property.</p>
 <p>The following calculated properties are provided:</p><table class='table'>
 <tr><td><strong>Property</strong></td><td><strong>Description</strong></td></tr>
-<tr><td>logP</td><td>The predicted partition coefficient (LogP) based on the ratio of 
-solubility of the molecule in 1-octanol compared to water; predicted by 
+<tr><td>logP</td><td>The predicted partition coefficient (LogP) based on the ratio of
+solubility of the molecule in 1-octanol compared to water; predicted by
 <a href='http://www.vcclab.org/lab/alogps/'>ALOGPS</a></td></tr>
-<tr><td>logS</td><td>The predicted solubility (LogS) of the molecule; 
+<tr><td>logS</td><td>The predicted solubility (LogS) of the molecule;
 predicted by <a href='http://www.vcclab.org/lab/alogps/'>ALOGPS</a>.</td></tr>
-<tr><td>IUPAC Name</td><td>The predicted International Union of Pure and Applied 
+<tr><td>IUPAC Name</td><td>The predicted International Union of Pure and Applied
 Chemistry (IUPAC) nomenclature for the structure; predicted by ChemAxon</td></tr>
-<tr><td>Traditional IUPAC Name</td><td>The non-systematic (or common) name for the 
+<tr><td>Traditional IUPAC Name</td><td>The non-systematic (or common) name for the
 molecule, which is not recognized by any formal nomenclature system;
 imported from ChemAxon.</td></tr>
-<tr><td>Molecular Weight</td><td>The predicted ratio of the average mass of one 
+<tr><td>Molecular Weight</td><td>The predicted ratio of the average mass of one
 molecule of an element or compound to one twelfth of the mass of an atom of carbon-12; calculated by ChemAxon.</td></tr>
-<tr><td>Monoisotopic Weight</td><td>The predicted mass of the most abundant isotope of 
+<tr><td>Monoisotopic Weight</td><td>The predicted mass of the most abundant isotope of
 the drug; calculated by ChemAxon.</td></tr>
-<tr><td>SMILES</td><td>The simplified molecular-input line-entry system (SMILES) is 
-a line notation used for describing the structure of chemical species using 
+<tr><td>SMILES</td><td>The simplified molecular-input line-entry system (SMILES) is
+a line notation used for describing the structure of chemical species using
 short ASCII strings; calculated by ChemAxon.</td></tr>
 <tr><td>InChI</td><td>A prediction of the IUPAC International Chemical Identifier
  (InChI); imported by ChemAxon.</td></tr>
 <tr><td>InChIKey</td><td>The condensed digital representation of the IUPAC International
  Chemical Identifier (InChI); imported by ChemAxon.</td></tr>
-<tr><td>Polar Surface Area (PSA)</td><td>A descriptor, based on the polarized atoms of 
-the molecule, that allows estimation of transport properties and of the 
-passive molecular transport through membranes of the drug; predicted by 
+<tr><td>Polar Surface Area (PSA)</td><td>A descriptor, based on the polarized atoms of
+the molecule, that allows estimation of transport properties and of the
+passive molecular transport through membranes of the drug; predicted by
 ChemAxon.</td></tr>
-<tr><td>Refractivity</td><td>The predicted molar refractivity of the molecule, which is 
-strongly related to the volume of the molecules and to London dispersive 
-forces that play crucial part in drug-receptor interactions; 
+<tr><td>Refractivity</td><td>The predicted molar refractivity of the molecule, which is
+strongly related to the volume of the molecules and to London dispersive
+forces that play crucial part in drug-receptor interactions;
 predicted by ChemAxon.</td></tr>
-<tr><td>Polarizability</td><td>The predicted relative tendency of the electron cloud 
+<tr><td>Polarizability</td><td>The predicted relative tendency of the electron cloud
 (charge distribution) of the molecule to be distorted by an external electric
  field; polarizability values predicted by ChemAxon.</td></tr>
-<tr><td>Rotatable Bond Count</td><td>The predicted number of rotatable bonds in the 
-molecule; predicted by ChemAxon. Unsaturated bonds, and single bonds 
-connected to hydrogens or terminal atoms, single bonds of amides, 
-sulphonamides and those connecting two hindered aromatic rings (having at 
+<tr><td>Rotatable Bond Count</td><td>The predicted number of rotatable bonds in the
+molecule; predicted by ChemAxon. Unsaturated bonds, and single bonds
+connected to hydrogens or terminal atoms, single bonds of amides,
+sulphonamides and those connecting two hindered aromatic rings (having at
 least three ortho substituents) are considered non-rotatable.</td></tr>
-<tr><td>H Bond Acceptor Count</td><td>A calculation of the sum of the hydrogen bond 
-acceptor atoms. An acceptor atom always has a lone electron pair/lone 
-electron pairs that is capable of establishing a H bond. Predicted by 
+<tr><td>H Bond Acceptor Count</td><td>A calculation of the sum of the hydrogen bond
+acceptor atoms. An acceptor atom always has a lone electron pair/lone
+electron pairs that is capable of establishing a H bond. Predicted by
 ChemAxon.</td></tr>
-<tr><td>H Bond Donor Count</td><td>A calculation of the sum of the atoms in the 
+<tr><td>H Bond Donor Count</td><td>A calculation of the sum of the atoms in the
 molecule which have hydrogen bond donor property. Predicted by ChemAxon.</td></tr>
 <tr><td>pKa (strongest acidic)</td><td>The strongest acidic pka value of the molecule;
  predicted by ChemAxon.</td></tr>
-<tr><td>pKa (strongest basic)</td><td>The strongest basic pka value of the molecule; 
+<tr><td>pKa (strongest basic)</td><td>The strongest basic pka value of the molecule;
 predicted by ChemAxon.</td></tr>
-<tr><td>Physiological Charge</td><td>Charge of the molecule at physiological pH; 
+<tr><td>Physiological Charge</td><td>Charge of the molecule at physiological pH;
 predicted by ChemAxon.</td></tr>
 <tr><td>Number of Rings</td><td>A calculation of the number of rings in the molecule;
  predicted by ChemAxon.</td></tr>
@@ -218,13 +209,13 @@ predicted by ChemAxon.</td></tr>
  the systemic circulation; predicted by ChemAxon.</td></tr>
 <tr><td>Rule of Five</td><td>A reflection of the absorption or permeation of a molecule;
  considered “yes” when the molecular weight is under 500 g/mol, the value of
-  logP is lower than 5, and the molecule has utmost 5 H-donor and 
+  logP is lower than 5, and the molecule has utmost 5 H-donor and
   10 H-acceptor atoms; predicted by ChemAxon.</td></tr>
 <tr><td>Ghose Filter</td><td>A filter that defines drug-likeness constraints as follows:
- calculated log P is between -0.4 and 5.6, molecular weight is between 
- 160 and 480, molar refractivity is between 40 and 130, and the total number 
+ calculated log P is between -0.4 and 5.6, molecular weight is between
+ 160 and 480, molar refractivity is between 40 and 130, and the total number
  of atoms is between 20 and 70. Imported from ChemAxon.</td></tr>
-<tr><td>MDDR-Like Rule</td><td>Indicates compliance of drug-like characteristics based 
+<tr><td>MDDR-Like Rule</td><td>Indicates compliance of drug-like characteristics based
 on number of rings, rigid bonds and rotatable bonds;
  calculated by ChemAxon.</td></tr>
 </table>

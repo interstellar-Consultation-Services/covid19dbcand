@@ -86,19 +86,10 @@ cause a physiological or biological change in the body." />
   </a>
 </li>
 <li>
-  <a href="../reference/index.html">Reference</a>
+  <a href="../articles/covid19dbcand.html">Get started</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Articles
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="../articles/Example.html">Example</a>
-    </li>
-  </ul>
+<li>
+  <a href="../reference/index.html">Reference</a>
 </li>
 <li>
   <a href="../news/index.html">Changelog</a>
@@ -139,89 +130,39 @@ cause a physiological or biological change in the body.</p>
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>a tibble with 29 variables:</p><dl'>
-  <dt>primary_id</dt><dd><p>drugbank id</p></dd>
-  <dt>other_ids</dt><dd><p>Other identifiers that may be associated with the drug.</p></dd>
-  <dt>type</dt><dd><p>Either small molecule, or biotech.
-   Biotech is used for any drug that is derived from living systems or
-   organisms, usually composed of high molecular weight mixtures of protein,
-   while small molecule describes a low molecular weight organic compound.</p></dd>
-  <dt>created</dt><dd><p>Date that this drug was first added to DrugBank.</p></dd>
-  <dt>updated</dt><dd><p>Denotes when this drug was last updated in DrugBank</p></dd>
-  <dt>name</dt><dd><p></p></dd>
-  <dt>description</dt><dd><p>Descriptions of drug chemical properties,
-   history and regulatory status</p></dd>
-  <dt>simple_description</dt><dd><p>The simple description uses non-technical
-  language and summarizes the most common uses for the drug</p></dd>
-  <dt>clinical_description</dt><dd><p>The clinical description includes the id
-  details about indications and mechanism to quickly summarize the drug for
-  a professional user.</p></dd>
-  <dt>cas_number</dt><dd><p>The Chemical Abstracts Service (CAS) registry number
-  assigned to the drug.</p></dd>
-  <dt>unii</dt><dd><p>Unique Ingredient Identifier (UNII) of this drug.</p></dd>
-  <dt>average_mass</dt><dd><p>The weighted average of the isotopic masses of the
-  drug.</p></dd>
-  <dt>monoisotopic_mass</dt><dd><p>The mass of the most abundant isotope of the drug</p></dd>
-  <dt>state</dt><dd><p>One of solid, liquid, or gas.</p></dd>
-  <dt>synthesis_reference</dt><dd><p>Citation for synthesis of the drug molecule.</p></dd>
-  <dt>indication</dt><dd><p>The approved conditions, diseases, or states for which
-  a drug can safely and effectively be used. An indication is considered to
-  be FDA-approved when it has any of the following designations: NDA, ANDA,
-  BLA, or OTC. May also include indications in other countries, such as
-  Canada (through Health Canada) or in Europe
-  (through the European Medicines Agency).</p></dd>
-  <dt>pharmacodynamics</dt><dd><p>A description of how the drug modifies or affects
-  the organism it is being used in. May include effects in the body that are
-  desired (enzyme or protein targets for example) and undesired (also known
-  as “side effects”). This is in contrast to pharmacokinetics, which
-  describes how the body modifies the drug being used.</p></dd>
-  <dt>mechanism_of_action</dt><dd><p>A component of pharmacodynamics that describes
-  the biochemical interaction through which a drug produces its intended
-  effect. May include the exact molecular protein or enzyme targets and/or
-  a description of the physiological effects produced.</p></dd>
-  <dt>metabolism</dt><dd><p>A description of the chemical degradation of the drug
-  molecule within the body; most commonly by enzymes from the Cytochrome P450
-  (CYP) system in the liver.</p></dd>
-  <dt>absorption</dt><dd><p>A description of the movement of the drug from the site
-  of administration into the bloodstream or target tissue.
-  Common pharmacokinetic metrics used to evaluate absorption include Area
-  Under the Curve (AUC), bioavailability (F), maximum concentration (Cmax),
-  and time to maximum concentration (Tmax)</p></dd>
-  <dt>half_life</dt><dd><p>The period of time it takes for the amount of drug in the
-   body to be reduced by one half. Provides a description of how quickly the
-   drug is being eliminated and how much is available in the bloodstream.</p></dd>
-  <dt>protein_binding</dt><dd><p>A description of the drug’s affinity for plama
-   proteins and the proportion of the drug that is bound to them when in
-   circulation within the body.</p></dd>
-  <dt>route_of_elimination</dt><dd><p>A description of the pathway that is used to
-  excrete the drug from the body. Common pharmacokinetic parameters used to
-  evaluate excretion include elemination half life, renal clearance, and
-  tracking of radiolabeled compounds through the renal and GI system.</p></dd>
-  <dt>volume_of_distribution</dt><dd><p>The Vd of a drug represents the degree to
-  which it is distributed into body tissue compared to the plasma.</p></dd>
-  <dt>clearance</dt><dd><p>A pharmacokinetic measurement of the rate of removal of
-  the drug from plasma, expressed as mL/min; reflects the rate of elimination
-   of the drug.</p></dd>
-  <dt>international_brands</dt><dd><p>The proprietary names used by the manufacturers
-   for commercially available forms of the drug, focusing on brand names for
-   products that are available in countries other than Canada and
-   the Unites States.</p></dd>
-  <dt>fda_label</dt><dd><p>Contains a URL for accessing the uploaded United States
-  Food and Drug Administration (FDA) Monograph for this drug.</p></dd>
-  <dt>msds</dt><dd><p>Contains a URL for accessing the Material Safety Data Sheet
-   (MSDS)
-   for this drug.</p></dd>
-  <dt>toxicity</dt><dd><p>Any adverse reaction, or side effect, that may or may not
-   occur with use of the drug. May be attributed to a number of effects
-   including: an enhanced therapeutic effect, rare anaphylactic reactions,
-   interactions with other medications, or unanticipated binding of the
-   molecule at different sites within the body.</p></dd>
-
-</dl>
-
+    <p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 33 rows and 15 columns.</p>
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p><a href='https://docs.drugbankplus.com/xml/'>Drugbank Documentation</a></p>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>a tibble with 15 variables:</p><dl'>
+  <dt>primary_key</dt><dd><p>Drugbank id</p></dd>
+  <dt>other_keys</dt><dd><p>Other identifiers that may be associated with the drug</p></dd>
+  <dt>type</dt><dd><p>Either small molecule, or biotech. Biotech is used for any
+  drug that is derived from living systems or organisms, usually composed of
+   high molecular weight mixtures of protein, while small molecule describes
+    a low molecular weight organic compound.</p></dd>
+  <dt>name</dt><dd><p></p></dd>
+  <dt>created</dt><dd><p>Date that this drug was first added to DrugBank.</p></dd>
+  <dt>updated</dt><dd><p>Denotes when this drug was last updated in DrugBank.</p></dd>
+  <dt>description</dt><dd><p>Descriptions of drug chemical properties,
+   history and regulatory status.</p></dd>
+  <dt>cas_number</dt><dd><p>The Chemical Abstracts Service (CAS) registry number
+   assigned to the drug.</p></dd>
+  <dt><em>unii</em></dt><dd><p>Unique Ingredient Identifier (UNII) of this drug.</p></dd>
+  <dt>average_mass</dt><dd><p>The weighted average of the isotopic masses of the
+  drug</p></dd>
+  <dt>state</dt><dd><p>One of solid, liquid, or gas</p></dd>
+  <dt>monoisotopic_mass</dt><dd><p>The mass of the most abundant isotope of the drug</p></dd>
+  <dt>synthesis_reference</dt><dd><p>Citation for synthesis of the drug molecule.</p></dd>
+  <dt>fda_label</dt><dd><p>Contains a URL for accessing the uploaded United States Food
+  and Drug Administration (FDA) Monograph for this drug.</p></dd>
+  <dt>msds</dt><dd><p>Contains a URL for accessing the Material Safety Data Sheet
+  (MSDS) for this drug.</p></dd>
+
+</dl>
+
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
