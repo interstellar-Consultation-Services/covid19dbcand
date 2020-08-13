@@ -12,8 +12,15 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
+<!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/covid19dbcand)](https://CRAN.R-project.org/package=covid19dbcand)
+[![Rdoc](https://www.rdocumentation.org/badges/version/covid19dbcand)](https://www.rdocumentation.org/packages/covid19dbcand)
+[![metacran downloads](https://cranlogs.r-pkg.org/badges/grand-total/covid19dbcand)](https://cran.r-project.org/package=covid19dbcand)
+<!-- badges: end -->
+
+
 ## Overview
-**covid19dbcand** is a smaller version from [dbdataset package](https://github.com/Dainanahan/dbdataset) that contains 75 different data frames that constitute the dataset parsed from [DrugBank](https://www.drugbank.ca). 
+**covid19dbcand** is a smaller version from [dbdataset package](https://github.com/Dainanahan/dbdataset) that contains different tibbles that constitute the dataset parsed from [DrugBank](https://www.drugbank.ca). 
 
 The dataset was extracted from the DrugBank XML database via [dbparser](https://docs.ropensci.org/dbparser) R package.
 
@@ -41,8 +48,16 @@ library(covid19dbcand)
 ```
 
 ## Used Versions
-* dbparser: 1.1.2
-* Drugbank: 5.1.6
+* dbparser: 1.2.0
+* Drugbank: 5.1.7
 
+## Share the love ❤️
+
+Think **covid19dbcand** is useful? Let others discover it, by telling them in person, via Twitter or a blog post.
+
+Using **covid19dbcand** for a paper you are writing? Consider citing it
+```{r}
+citation("covid19dbcand")
+```
 
 

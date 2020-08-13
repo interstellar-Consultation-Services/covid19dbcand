@@ -1,11 +1,20 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+<!-- badges: start -->
+
+[![CRAN
+status](https://www.r-pkg.org/badges/version/covid19dbcand)](https://CRAN.R-project.org/package=covid19dbcand)
+[![Rdoc](https://www.rdocumentation.org/badges/version/covid19dbcand)](https://www.rdocumentation.org/packages/covid19dbcand)
+[![metacran
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/covid19dbcand)](https://cran.r-project.org/package=covid19dbcand)
+<!-- badges: end -->
+
 ## Overview
 
 **covid19dbcand** is a smaller version from [dbdataset
-package](https://github.com/Dainanahan/dbdataset) that contains 75
-different data frames that constitute the dataset parsed from
+package](https://github.com/Dainanahan/dbdataset) that contains
+different tibbles that constitute the dataset parsed from
 [DrugBank](https://www.drugbank.ca).
 
 The dataset was extracted from the DrugBank XML database via
@@ -43,5 +52,33 @@ library(covid19dbcand)
 
 ## Used Versions
 
-  - dbparser: 1.1.2
-  - Drugbank: 5.1.6
+  - dbparser: 1.2.0
+  - Drugbank: 5.1.7
+
+## Share the love ❤️
+
+Think **covid19dbcand** is useful? Let others discover it, by telling
+them in person, via Twitter or a blog post.
+
+Using **covid19dbcand** for a paper you are writing? Consider citing it
+
+``` r
+citation("covid19dbcand")
+#> 
+#> To cite package 'covid19dbcand' in publications use:
+#> 
+#>   Mohammed Ali (2020). covid19dbcand: Selected 'Drugbank' Drugs for
+#>   COVID-19 Treatment Related Data in R Format. R package version 0.1.0.
+#>   https://CRAN.R-project.org/package=covid19dbcand
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {covid19dbcand: Selected 'Drugbank' Drugs for COVID-19 Treatment Related Data in
+#> R Format},
+#>     author = {Mohammed Ali},
+#>     year = {2020},
+#>     note = {R package version 0.1.0},
+#>     url = {https://CRAN.R-project.org/package=covid19dbcand},
+#>   }
+```
