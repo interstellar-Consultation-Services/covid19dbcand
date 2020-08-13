@@ -67,8 +67,7 @@ Each data frame is named based on its position in DrugBank's data hierarchy. For
 ## Dataset Contents
 The following are the datasets in our package
 ```{r echo=FALSE}
-data <- vcdExtra::datasets("covid19dbcand")
-DT::datatable(data[, c(1,3)])
+DT::datatable(data(package = "covid19dbcand")[["results"]][,c(3,4)])
 ```
 
 
