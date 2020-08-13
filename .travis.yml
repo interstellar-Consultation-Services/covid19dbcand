@@ -3,13 +3,7 @@
 language: R
 cache: packages
 
-r_packages:
-  - data.tree
-  - DT
-  - networkD3
-  - vcdExtra
 after_success:
   - Rscript -e 'library(pkgdown); build_site()'
 
-before_cache: Rscript -e 'remotes::install_cran(c("pkgdown", "vcdExtra",
-"DT", "data.tree", "networkD3"))'
+before_cache: Rscript -e 'remotes::install_cran(c("pkgdown"))'
