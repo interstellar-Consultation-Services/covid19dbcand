@@ -13,7 +13,7 @@ a tibble with 8 variables:
   salt form(s).}
   \item{cas-number}{Chemical Abstracts Service (CAS) registry number assigned
    to the salt form(s) of the drug.}
-  \item{inchikey}{\href{http://www.inchi-trust.org/}{IUPAC International
+  \item{inchikey}{\href{https://www.inchi-trust.org/}{IUPAC International
   Chemical Identifier (InChi)} key identifier for the available salt form(s)}
   \item{average-mass}{Average molecular mass: the weighted average of the
    isotopic masses of the salt.}

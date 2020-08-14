@@ -22,7 +22,7 @@ Pathways_Drug
 }
 \description{
 Metabolic, disease, and biological pathways that the drug is involved in,
-as identified by the \href{http://smpdb.ca/}{Small Molecule Protein Database
+as identified by the \href{https://smpdb.ca/}{Small Molecule Protein Database
  (SMPDB)}.
 }
 \details{

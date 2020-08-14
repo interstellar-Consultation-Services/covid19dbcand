@@ -21,7 +21,7 @@ ATC_Codes_Drug
 }
 \description{
 The Anatomical Therapeutic Classification (ATC) code for the drug assigned by
-the \href{http://www.who.int/classifications/atcddd/en/}{World Health
+the \href{https://www.who.int/classifications/atcddd/en/}{World Health
 Organization Anatomical Chemical Classification System}.
 }
 \details{

@@ -120,7 +120,7 @@ NULL
 #' Drug related ATC Codes
 #'
 #' The Anatomical Therapeutic Classification (ATC) code for the drug assigned by
-#' the \href{http://www.who.int/classifications/atcddd/en/}{World Health
+#' the \href{https://www.who.int/classifications/atcddd/en/}{World Health
 #' Organization Anatomical Chemical Classification System}.
 #'
 #' Each drug may have one or more atc-code.
@@ -437,7 +437,7 @@ NULL
 #' Drug identifiers may be provided for the following resources
 #' \itemize{
 #'   \item \href{https://www.wikipedia.org/}{Wikipedia}
-#'   \item \href{http://www.ebi.ac.uk/chebi/}{ChEBI}
+#'   \item \href{https://www.ebi.ac.uk/chebi/}{ChEBI}
 #'   \item \href{https://www.ebi.ac.uk/chembl/}{ChEMBL}
 #'   \item \href{https://pubchem.ncbi.nlm.nih.gov/}{PubChem Compound}
 #'   \item \href{https://pubchem.ncbi.nlm.nih.gov/}{PubChem Substance}
@@ -446,14 +446,14 @@ NULL
 #'   \item \href{https://www.genome.jp/kegg/compound/}{KEGG Compound}
 #'   \item \href{https://www.genome.jp/kegg/drug/}{KEGG Compound}
 #'   \item \href{https://www.genome.jp/kegg/drug/}{KEGG Drug}
-#'   \item \href{https://www.chemspider.com/}{ChemSpider}
+#'   \item ChemSpider
 #'   \item \href{https://bindingdb.org/}{BindingDB}
 #'   \item \href{https://dailymed.nlm.nih.gov/}{National Drug Code Directory}
 #'   \item \href{https://www.ncbi.nlm.nih.gov/genbank/}{GenBank}
-#'   \item \href{https://www.pharmgkb.org/}{PharmGKB}
+#'   \item PharmGKB
 #'   \item \href{https://www.rcsb.org/}{PDB}
 #'   \item \href{https://www.guidetopharmacology.org/}{Guide to Pharmacology}
-#'   \item \href{https://zinc15.docking.org/}{ZINC}
+#'   \item ZINC
 #'   \item \href{https://www.nlm.nih.gov/research/umls/rxnorm/index.html}{RxCUI}
 #' }
 #'
@@ -747,7 +747,7 @@ NULL
 #' Drug Pathways
 #'
 #' Metabolic, disease, and biological pathways that the drug is involved in,
-#' as identified by the \href{http://smpdb.ca/}{Small Molecule Protein Database
+#' as identified by the \href{https://smpdb.ca/}{Small Molecule Protein Database
 #'  (SMPDB)}.
 #'
 #' Each drug may have one or more pathway.
@@ -817,7 +817,7 @@ NULL
 #'
 #' @format a tibble with 20 variables:
 #' \describe{
-#'   \item{id}{\href{http://www.uniprot.org/}{Universal Protein Resource
+#'   \item{id}{\href{https://www.uniprot.org/}{Universal Protein Resource
 #'   (UniProt) identifier}}
 #'   \item{source}{Specifies whether the identified polypeptide ID is
 #'   associated with any of the following UniProt knowledge bases:
@@ -925,7 +925,7 @@ NULL
 #'   salt form(s).}
 #'   \item{cas-number}{Chemical Abstracts Service (CAS) registry number assigned
 #'    to the salt form(s) of the drug.}
-#'   \item{inchikey}{\href{http://www.inchi-trust.org/}{IUPAC International
+#'   \item{inchikey}{\href{https://www.inchi-trust.org/}{IUPAC International
 #'   Chemical Identifier (InChi)} key identifier for the available salt form(s)}
 #'   \item{average-mass}{Average molecular mass: the weighted average of the
 #'    isotopic masses of the salt.}
@@ -1059,7 +1059,7 @@ NULL
 #' \describe{
 #'   \item{protein-name}{Proteins involved in this SNP.}
 #'   \item{gene-symbol}{Genes involved in this SNP.}
-#'   \item{uniprot-id}{\href{http://www.uniprot.org/}{Universal Protein
+#'   \item{uniprot-id}{\href{https://www.uniprot.org/}{Universal Protein
 #'   Resource (UniProt)} identifiers for proteins involved in this pathway.}
 #'   \item{rs-id}{The \href{https://www.ncbi.nlm.nih.gov/projects/SNP/}{SNP
 #'   Database} identifier for this single nucleotide polymorphism.}
@@ -1067,7 +1067,7 @@ NULL
 #'   \item{adverse-reaction}{}
 #'   \item{description}{}
 #'   \item{pubmed-id}{Reference to PubMed article.}
-#'   \item{parent_key}{\href{http://www.ncbi.nlm.nih.gov/pubmed}{drugbank id}}
+#'   \item{parent_key}{\href{https://www.ncbi.nlm.nih.gov/}{drugbank id}}
 #' }
 #'
 #' @source \href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}
@@ -1183,7 +1183,7 @@ NULL
 #' \describe{
 #'   \item{protein-name}{Proteins involved in this SNP.}
 #'   \item{gene-symbol}{Genes involved in this SNP.}
-#'   \item{uniprot-id	}{\href{http://www.uniprot.org/}{Universal Protein
+#'   \item{uniprot-id	}{\href{https://www.uniprot.org/}{Universal Protein
 #'   Resource (UniProt)} identifiers for
 #'   proteins involved in this pathway.}
 #'   \item{rs-id}{The \href{https://www.ncbi.nlm.nih.gov/projects/SNP/}{SNP

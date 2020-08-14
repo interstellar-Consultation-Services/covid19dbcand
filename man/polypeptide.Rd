@@ -11,7 +11,7 @@
 \format{
 a tibble with 20 variables:
 \describe{
-  \item{id}{\href{http://www.uniprot.org/}{Universal Protein Resource
+  \item{id}{\href{https://www.uniprot.org/}{Universal Protein Resource
   (UniProt) identifier}}
   \item{source}{Specifies whether the identified polypeptide ID is
   associated with any of the following UniProt knowledge bases:
