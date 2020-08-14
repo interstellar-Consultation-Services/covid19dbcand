@@ -6,7 +6,13 @@
 \title{Drug Categories
 General categorizations of the drug}
 \format{
-
+a tibble with 3 variables:
+\describe{
+  \item{category}{Category name}
+  \item{mesh-id}{The Medical Subjects
+  Headings (MeSH) identifier for the category.}
+  \item{parent_id}{drugbank id}
+}
 }
 \source{
 \href{https://docs.drugbankplus.com/xml/}{Drugbank Documentation}

@@ -198,7 +198,7 @@ NULL
 #' \describe{
 #'   \item{category}{Category name}
 #'   \item{mesh-id}{The Medical Subjects
-#'   Headings (MeSH)} identifier for the category.}
+#'   Headings (MeSH) identifier for the category.}
 #'   \item{parent_id}{drugbank id}
 #' }
 #'
