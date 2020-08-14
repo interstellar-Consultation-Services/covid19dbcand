@@ -14,7 +14,7 @@ covid-19
 The package is a smaller version from 
 [dbdataset package](https://github.com/Dainanahan/dbdataset).
 
-It is extracted using [dbparser](https://dainanahan.github.io/dbparser/) 
+It is extracted using [dbparser](https://docs.ropensci.org/dbparser/) 
 
 For more information kindly check the
 reference/index 

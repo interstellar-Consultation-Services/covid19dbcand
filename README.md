@@ -20,7 +20,7 @@ different tibbles that constitute the dataset parsed from
 [DrugBank](https://www.drugbank.ca).
 
 The dataset was extracted from the DrugBank XML database via
-[dbparser](https://docs.ropensci.org/dbparser) R package.
+[dbparser](https://docs.ropensci.org/dbparser/) R package.
 
 This dataset dedicated to covid-19 potential drugs in
 [Drugbank](https://www.drugbank.ca/covid-19#drugs).
@@ -66,21 +66,23 @@ Using **covid19dbcand** for a paper you are writing? Consider citing it
 
 ``` r
 citation("covid19dbcand")
+#> Warning in citation("covid19dbcand"): no date field in DESCRIPTION file of
+#> package 'covid19dbcand'
+#> Warning in citation("covid19dbcand"): could not determine year for
+#> 'covid19dbcand' from package DESCRIPTION file
 #> 
 #> To cite package 'covid19dbcand' in publications use:
 #> 
-#>   Mohammed Ali (2020). covid19dbcand: Selected 'Drugbank' Drugs for
-#>   COVID-19 Treatment Related Data in R Format. R package version 0.1.0.
-#>   https://CRAN.R-project.org/package=covid19dbcand
+#>   Mohammed Ali (NA). covid19dbcand: Selected 'Drugbank' Drugs for
+#>   COVID-19 Treatment Related Data in R Format. R package version 0.1.1.
+#>   https://github.com/MohammedFCIS/covid19dbcand
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {covid19dbcand: Selected 'Drugbank' Drugs for COVID-19 Treatment Related Data in
-#> R Format},
+#>     title = {covid19dbcand: Selected 'Drugbank' Drugs for COVID-19 Treatment Related Data in R Format},
 #>     author = {Mohammed Ali},
-#>     year = {2020},
-#>     note = {R package version 0.1.0},
-#>     url = {https://CRAN.R-project.org/package=covid19dbcand},
+#>     note = {R package version 0.1.1},
+#>     url = {https://github.com/MohammedFCIS/covid19dbcand},
 #>   }
 ```
