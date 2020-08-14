@@ -30,7 +30,7 @@ Each drug may have one or more atc-code.
 Each atc-code has one or more level.
 
 The atc-code and level elements each have a code which specifies the code
-assigned by \href{http://www.who.int/classifications/atcddd/en/}{World Health
+assigned by \href{https://www.who.int/classifications/atcddd/en/}{World Health
 Organization Anatomical Chemical Classification System}.
 }
 \keyword{datasets}

@@ -7,7 +7,7 @@
 \format{
 a tibble with 4 variables:
 \describe{
-  \item{smpdb_id}{\href{http://smpdb.ca/}{Small Molecule Protein Database
+  \item{smpdb_id}{\href{https://smpdb.ca/}{Small Molecule Protein Database
  (SMPDB)} identifier for this pathway.}
   \item{name}{Pathway name}
   \item{category}{Pathway category}

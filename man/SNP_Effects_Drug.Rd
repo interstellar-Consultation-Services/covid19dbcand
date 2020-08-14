@@ -16,7 +16,7 @@ a tibble with 9 variables:
    Database} identifier for this single nucleotide polymorphism.}
   \item{allele}{The alleles associated with the identified SNP.}
   \item{defining-change}{A written description of the SNP effects.}
-  \item{pubmed-id}{Reference to \href{http://www.ncbi.nlm.nih.gov/pubmed}{
+  \item{pubmed-id}{Reference to \href{https://www.ncbi.nlm.nih.gov}{
   PubMed} article}
   \item{description}{A written description of the SNP effects}
   \item{parent_key}{drugbank id}

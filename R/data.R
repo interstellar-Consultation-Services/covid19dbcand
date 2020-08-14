@@ -128,7 +128,7 @@ NULL
 #' Each atc-code has one or more level.
 #'
 #' The atc-code and level elements each have a code which specifies the code
-#' assigned by \href{http://www.who.int/classifications/atcddd/en/}{World Health
+#' assigned by \href{https://www.who.int/classifications/atcddd/en/}{World Health
 #' Organization Anatomical Chemical Classification System}.
 #'
 #' @format a tibble with 4 variables:
@@ -754,7 +754,7 @@ NULL
 #'
 #' @format a tibble with 4 variables:
 #' \describe{
-#'   \item{smpdb_id}{\href{http://smpdb.ca/}{Small Molecule Protein Database
+#'   \item{smpdb_id}{\href{https://smpdb.ca/}{Small Molecule Protein Database
 #'  (SMPDB)} identifier for this pathway.}
 #'   \item{name}{Pathway name}
 #'   \item{category}{Pathway category}
@@ -1190,7 +1190,7 @@ NULL
 #'    Database} identifier for this single nucleotide polymorphism.}
 #'   \item{allele}{The alleles associated with the identified SNP.}
 #'   \item{defining-change}{A written description of the SNP effects.}
-#'   \item{pubmed-id}{Reference to \href{http://www.ncbi.nlm.nih.gov/pubmed}{
+#'   \item{pubmed-id}{Reference to \href{https://www.ncbi.nlm.nih.gov}{
 #'   PubMed} article}
 #'   \item{description}{A written description of the SNP effects}
 #'   \item{parent_key}{drugbank id}
