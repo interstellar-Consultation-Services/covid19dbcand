@@ -15,7 +15,7 @@ status](https://travis-ci.com/MohammedFCIS/covid19dbcand.svg?branch=master)](htt
 ## Overview
 
 **covid19dbcand** is a smaller version from [dbdataset
-package](https://github.com/Dainanahan/dbdataset) that contains
+package](https://github.com/MohammedFCIS/dbdataset) that contains
 different tibbles that constitute the dataset parsed from
 [DrugBank](https://www.drugbank.ca).
 

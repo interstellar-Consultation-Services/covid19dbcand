@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 
 
 ## Overview
-**covid19dbcand** is a smaller version from [dbdataset package](https://github.com/Dainanahan/dbdataset) that contains different tibbles that constitute the dataset parsed from [DrugBank](https://www.drugbank.ca). 
+**covid19dbcand** is a smaller version from [dbdataset package](https://github.com/MohammedFCIS/dbdataset) that contains different tibbles that constitute the dataset parsed from [DrugBank](https://www.drugbank.ca). 
 
 The dataset was extracted from the DrugBank XML database via [dbparser](https://docs.ropensci.org/dbparser/) R package.
 
